@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/widget31"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+    android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SimpleTodoActivity"
+>
+<TableRow
+android:id="@+id/row"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+>
+	<EditText
+	android:id="@+id/etNewTask"
+	android:layout_width="275dp"
+	android:layout_height="wrap_content"
+	android:text=""
+	android:textSize="18sp"
+	android:inputType="text"
+	android:hint="@+string/new_todo_hint"
+	>
+	</EditText>
+	<Button
+	android:id="@+id/btNewTask"
+	android:layout_width="40dp"
+	android:layout_height="wrap_content"
+	android:text="@+string/add_button_name"
+	android:textSize="16sp"
+	android:background="@drawable/add_button_gradient"
+	>
+	</Button>
+</TableRow>
+<cc.gilmore.todo.DraggableListView
+android:id="@+id/todoListView"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+</cc.gilmore.todo.DraggableListView>
+<!-- 
+<ListView
+android:id="@+id/todoListView"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+</ListView>
+ -->
+</LinearLayout>

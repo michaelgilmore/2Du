@@ -1,0 +1,27 @@
+TODO
+
+v1.0 - 20140825
+Added call to PHP web service to add new todos to online MySQL database.
+
+v0.3.2 - 20140825
+Fix delete button - it is crashing the app when pressed
+Nearly aligned add button with done buttons...
+
+v0.3.1 - 20140825
+Added black background around new todo edit box.
+Changed symbol on delete button from '-' to 'X'.
+Right-aligned the add button in the tablerow.
+
+v0.3 - 20140824
+Added button for marking todo done, rather than clicking the todo itself.
+Learned adb shell logcat > 20140824_0754.txt
+
+v0.2 - 20140821
+Added ability to sort todos by drag and drop.
+Moved insert box to top so it isn't moved out of view.
+
+v0.1.1
+Added PHP web service to gilmore.cc mysql database for storing todos - not hooked in to app yet...
+
+v0.1
+DB schema (v2) - add create datetime

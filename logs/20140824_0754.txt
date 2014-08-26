@@ -1,0 +1,1368 @@
+--------- beginning of /dev/log/system
+I/ONCRPC  (  157): xdr_std_msg_send_call: Sent Xid: 482, Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Received Reply Xid: 482, Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+W/Vold    (  117): USB online = 1
+D/BatteryService(  192): mForbidHalting[false] mForbidOTP[false]
+D/BatteryService(  192): Post: Temp(280), Status(2), Health(2), Level(99), PlugType(2), AC(false), USB(true)
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=RILJ
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -116 -150 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+D/LedManagerService(  192): solid color(FFFF00) ...
+W/LightsService(  192): Method(setColor), LightID(FIH), Color(0xFFFF00), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+I/TelephonyRegistry(  192): notifyServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+V/StatusBarPolicy(  262): Cdma ROAMING_INDICATOR_OFF, removing ERI icon
+D/StatusBarPolicy(  262): updateDataIcon mSimState: READY hasService=true mServiceState.getRadioTechnology(): 6 mDataState: 0
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=Wakeful StateMachine: GeofencerStateMachine
+D/StatusBarPolicy(  262): getRadioTechnology,oldValue: 6 newValue: 6
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=Wakeful StateMachine: GeofencerStateMachine
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=sleep_broadcast
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): userActivity mLastEventTime=128315823 time=128505489 mUserActivityAllowed=false mUserState=0x0 mWakeLockState=0x7 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  192): acquireWakeLock flags=0x1000001a tag=keyguard
+D/PowerManagerService(  192): acquireWakeLock flags=0x1000001a tag=keyguard
+D/PowerManagerService(  192): userActivity mLastEventTime=128505489 time=128505790 mUserActivityAllowed=false mUserState=0x0 mWakeLockState=0x7 mProximitySensorActive=false timeoutOverride=-1 force=false
+I/ActivityManager(  192): Start proc com.fihtdc.RingModeProfile for service com.fihtdc.RingModeProfile/.SoundSettingObserverService: pid=28554 uid=10086 gids={1015}
+D/PowerManagerService(  192): acquireWakeLock flags=0x1000001a tag=keyguard
+D/PowerManagerService(  192): acquireWakeLock flags=0x1000001a tag=keyguard
+D/PowerManagerService(  192): userActivity mLastEventTime=128505790 time=128506269 mUserActivityAllowed=false mUserState=0x0 mWakeLockState=0x7 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): userActivity mLastEventTime=128506269 time=128506319 mUserActivityAllowed=true mUserState=0x0 mWakeLockState=0x7 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  192): setTimeoutLocked now=128506319 timeoutOverride=-1 nextState=3 when=128512319
+D/PowerManagerService(  192): releaseWakeLock flags=0x1000001a tag=keyguard
+D/PowerManagerService(  192): setPowerState: mPowerState=7 newState=3 noChangeLights=false
+D/PowerManagerService(  192):   oldKeyboardBright=false newKeyboardBright=false
+D/PowerManagerService(  192):   oldScreenBright=true newScreenBright=true
+D/PowerManagerService(  192):   oldButtonBright=true newButtonBright=false
+D/PowerManagerService(  192):   oldScreenOn=true newScreenOn=true
+D/PowerManagerService(  192):   oldBatteryLow=false newBatteryLow=false
+D/WindowManager(  192): Input focus has changed to null
+V/WindowManager(  192): Found focus @ 5 = Window{40a28500 com.motorola.mmsp.threed.motohome/com.motorola.mmsp.threed.motohome.HomeActivity paused=false}
+D/WindowManager(  192): Input focus has changed to Window{40a28500 com.motorola.mmsp.threed.motohome/com.motorola.mmsp.threed.motohome.HomeActivity paused=false}
+V/WindowManager(  192): Desired input method target=Window{40b39970 SurfaceView paused=false} willMove=false
+W/InputManagerService(  192): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@40c35e68
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c124, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c124
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c124
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -117 -310 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+I/ActivityManager(  192): Start proc com.google.android.gm for service com.google.android.gm/.provider.MailSyncAdapterService: pid=28563 uid=10074 gids={3003, 1015}
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+I/ActivityManager(  192): Start proc com.cooliris.media for service com.cooliris.media/com.cooliris.picasa.PicasaService: pid=28577 uid=10096 gids={1015, 3003}
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+W/ActivityManager(  192): Activity destroy timeout for HistoryRecord{40c58940 cc.gilmore.todo/.activity.SimpleTodoActivity}
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=UlrDispatchingService
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=GCoreFlp
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=GCoreFlp
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=UlrDispatchingService
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=UlrDispatchingService
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=GCoreFlp
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=GCoreFlp
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=UlrDispatchingService
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): userActivity mLastEventTime=128506319 time=128512050 mUserActivityAllowed=true mUserState=0x3 mWakeLockState=0x0 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  192): setTimeoutLocked now=128512050 timeoutOverride=-1 nextState=3 when=128518050
+D/PowerManagerService(  192): userActivity mLastEventTime=128512050 time=128512184 mUserActivityAllowed=true mUserState=0x3 mWakeLockState=0x0 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  192): setTimeoutLocked now=128512184 timeoutOverride=-1 nextState=3 when=128518184
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c128, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c128
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c128
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -122 -210 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=*sync*
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c12b, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c12b
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c12b
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -120 -130 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+D/StatusBarPolicy(  262): updateWifi: android.net.wifi.RSSI_CHANGED : wifi state: 4 supplicant connected: false
+D/StatusBarPolicy(  262): updateWifi RSSI_CHANGED_ACTION newRssi:-63 newSignalLevel: 2 mLastWifiSignalLevel: 1
+D/PowerManagerService(  192): setTimeoutLocked now=128518190 timeoutOverride=-1 nextState=1 when=128565190
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c131, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c131
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c131
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -118 -180 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+D/StatusBarPolicy(  262): updateWifi: android.net.wifi.RSSI_CHANGED : wifi state: 4 supplicant connected: false
+D/StatusBarPolicy(  262): updateWifi RSSI_CHANGED_ACTION newRssi:-71 newSignalLevel: 1 mLastWifiSignalLevel: 2
+D/PowerManagerService(  192): userActivity mLastEventTime=128512184 time=128527195 mUserActivityAllowed=true mUserState=0x3 mWakeLockState=0x0 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  192): setTimeoutLocked now=128527195 timeoutOverride=-1 nextState=3 when=128533195
+D/PowerManagerService(  192): userActivity mLastEventTime=128527195 time=128527329 mUserActivityAllowed=true mUserState=0x3 mWakeLockState=0x0 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  192): setTimeoutLocked now=128527329 timeoutOverride=-1 nextState=3 when=128533329
+D/PowerManagerService(  192): userActivity mLastEventTime=128527329 time=128527956 mUserActivityAllowed=true mUserState=0x3 mWakeLockState=0x0 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  192): setTimeoutLocked now=128527956 timeoutOverride=-1 nextState=3 when=128533956
+D/PowerManagerService(  192): userActivity mLastEventTime=128527956 time=128528082 mUserActivityAllowed=true mUserState=0x3 mWakeLockState=0x0 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  192): setTimeoutLocked now=128528082 timeoutOverride=-1 nextState=3 when=128534082
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c133, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c133
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c133
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -124 -210 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+D/StatusBarPolicy(  262): updateWifi: android.net.wifi.RSSI_CHANGED : wifi state: 4 supplicant connected: false
+D/StatusBarPolicy(  262): updateWifi RSSI_CHANGED_ACTION newRssi:-69 newSignalLevel: 2 mLastWifiSignalLevel: 1
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SyncManagerHandleSyncAlarm
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SyncManagerHandleSyncAlarm
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c135, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c135
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c135
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -115 -120 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c136, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c136
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c136
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+I/ONCRPC  (  157): Setup RPC Call for task 80219410
+I/ONCRPC  (  157): oncrpc_xdr_call_msg_start: Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Sent Xid: 483, Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+I/ONCRPC  (  157): xdr_std_msg_send_call: Received Reply Xid: 483, Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=RILJ
+I/TelephonyRegistry(  192): notifyServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+V/StatusBarPolicy(  262): Cdma ROAMING_INDICATOR_OFF, removing ERI icon
+D/StatusBarPolicy(  262): updateDataIcon mSimState: READY hasService=true mServiceState.getRadioTechnology(): 6 mDataState: 0
+D/StatusBarPolicy(  262): getRadioTechnology,oldValue: 6 newValue: 6
+D/StatusBarPolicy(  262): updateWifi: android.net.wifi.RSSI_CHANGED : wifi state: 4 supplicant connected: false
+D/StatusBarPolicy(  262): updateWifi RSSI_CHANGED_ACTION newRssi:-74 newSignalLevel: 1 mLastWifiSignalLevel: 2
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c138, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c138
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c138
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -114 -130 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+D/PowerManagerService(  192): setTimeoutLocked now=128534087 timeoutOverride=-1 nextState=1 when=128581087
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c13a, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c13a
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c13a
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c13b, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c13b
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c13b
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -115 -170 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+I/ONCRPC  (  157): Setup RPC Call for task 80219410
+I/ONCRPC  (  157): oncrpc_xdr_call_msg_start: Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Sent Xid: 484, Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+I/ONCRPC  (  157): xdr_std_msg_send_call: Received Reply Xid: 484, Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=RILJ
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=RILJ
+I/TelephonyRegistry(  192): notifyServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+V/StatusBarPolicy(  262): Cdma ROAMING_INDICATOR_OFF, removing ERI icon
+D/StatusBarPolicy(  262): updateDataIcon mSimState: READY hasService=true mServiceState.getRadioTechnology(): 6 mDataState: 0
+D/StatusBarPolicy(  262): getRadioTechnology,oldValue: 6 newValue: 6
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c13d, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c13d
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c13d
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -116 -140 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c13e, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c13e
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c13e
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+I/ONCRPC  (  157): Setup RPC Call for task 80219410
+I/ONCRPC  (  157): oncrpc_xdr_call_msg_start: Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Sent Xid: 485, Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+I/ONCRPC  (  157): xdr_std_msg_send_call: Received Reply Xid: 485, Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=RILJ
+I/TelephonyRegistry(  192): notifyServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+V/StatusBarPolicy(  262): Cdma ROAMING_INDICATOR_OFF, removing ERI icon
+D/StatusBarPolicy(  262): updateDataIcon mSimState: READY hasService=true mServiceState.getRadioTechnology(): 6 mDataState: 0
+D/StatusBarPolicy(  262): getRadioTechnology,oldValue: 6 newValue: 6
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+I/AlarmManager(  192): receive ACTION_TIME_TICK
+I/AlarmManager(  192): currentTime MINUTE: 14 currentTime SECOND: 0
+I/AlarmManager(  192): set  mTimeTickSender
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/BatteryService(  192): mForbidHalting[false] mForbidOTP[false]
+D/BatteryService(  192): Post: Temp(280), Status(2), Health(2), Level(99), PlugType(2), AC(false), USB(true)
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SyncManagerHandleSyncAlarm
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SyncManagerHandleSyncAlarm
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=*sync*
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c147, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c147
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c147
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -114 -120 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SyncManagerHandleSyncAlarm
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SyncManagerHandleSyncAlarm
+D/StatusBarPolicy(  262): updateWifi: android.net.wifi.RSSI_CHANGED : wifi state: 4 supplicant connected: false
+D/StatusBarPolicy(  262): updateWifi RSSI_CHANGED_ACTION newRssi:-70 newSignalLevel: 2 mLastWifiSignalLevel: 1
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+D/BatteryService(  192): mForbidHalting[false] mForbidOTP[false]
+D/BatteryService(  192): Post: Temp(280), Status(2), Health(2), Level(99), PlugType(2), AC(false), USB(true)
+D/PowerManagerService(  192): setPowerState: mPowerState=3 newState=1 noChangeLights=false
+D/PowerManagerService(  192):   oldKeyboardBright=false newKeyboardBright=false
+D/PowerManagerService(  192):   oldScreenBright=true newScreenBright=false
+D/PowerManagerService(  192):   oldButtonBright=false newButtonBright=false
+D/PowerManagerService(  192):   oldScreenOn=true newScreenOn=true
+D/PowerManagerService(  192):   oldBatteryLow=false newBatteryLow=false
+I/PowerManagerService(  192): SCREEN_ON_BIT 3 steps:1
+D/PowerManagerService(  192): setTimeoutLocked now=128581098 timeoutOverride=-1 nextState=0 when=128588098
+W/LightsService(  192): Method(setLightLocked), LightID(BACKLIGHT), Color(0xFF141414), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+W/ActivityManager(  192): No content provider found for: 
+W/ActivityManager(  192): No content provider found for: 
+I/ActivityManager(  192): Force stopping package cc.gilmore.todo uid=10112
+I/PackageManager(  192): Package cc.gilmore.todo codePath changed from /data/app/cc.gilmore.todo-1.apk to /data/app/cc.gilmore.todo-2.apk; Retaining data and using new
+I/PackageManager(  192): Unpacking native libraries for /data/app/cc.gilmore.todo-2.apk
+I/ActivityManager(  192): Force stopping package cc.gilmore.todo uid=10112
+W/PackageManager(  192): Code path for pkg : cc.gilmore.todo changing from /data/app/cc.gilmore.todo-1.apk to /data/app/cc.gilmore.todo-2.apk
+W/PackageManager(  192): Resource path for pkg : cc.gilmore.todo changing from /data/app/cc.gilmore.todo-1.apk to /data/app/cc.gilmore.todo-2.apk
+--------- beginning of /dev/log/main
+D/PackageManager(  192): New package installed in /data/app/cc.gilmore.todo-2.apk
+D/dalvikvm(  192): GC_FOR_MALLOC freed 1145K, 34% free 8414K/12743K, external 6181K/7719K, paused 82ms
+I/ActivityManager(  192): Force stopping package cc.gilmore.todo uid=10112
+D/dalvikvm(  330): GC_EXPLICIT freed 300K, 53% free 3741K/7815K, external 6635K/7240K, paused 38ms
+D/dalvikvm(  362): GC_EXPLICIT freed 139K, 51% free 3155K/6407K, external 3005K/3347K, paused 35ms
+D/dalvikvm(  287): GC_EXPLICIT freed 274K, 49% free 4712K/9159K, external 6641K/7421K, paused 81ms
+D/ActivityGraphModel(  362): 2011/12/07
+D/ActivityGraphModel(  362): receive intent:Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:cc.gilmore.todo flg=0x10000000 cmp=com.motorola.mmsp.activitygraph/.ActivityGraphModel (has extras) }
+D/Sources (  287): Creating external source for type=com.facebook.auth.login, packageName=com.facebook.katana
+D/Sources (  287): Creating external source for type=com.facebook.auth.login, packageName=com.facebook.katana
+I/ActivityManager(  192): Start proc com.google.android.gms.drive for broadcast com.google.android.gms/.drive.api.DriveSystemBroadcastReceiver: pid=28633 uid=10001 gids={3003, 1015, 1006, 3002, 3001, 1007, 2001}
+D/ServiceStateTracker(  290): signalStrength = 99, rssi = 255
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c15c, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c15c
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c15c
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+D/dalvikvm(  120): GC_EXPLICIT freed 11K, 44% free 3036K/5379K, external 1754K/2138K, paused 151ms
+D/szipinf (  192): Initializing inflate state
+D/dalvikvm(  120): GC_EXPLICIT freed <1K, 44% free 3036K/5379K, external 1754K/2138K, paused 99ms
+D/dalvikvm(  120): GC_EXPLICIT freed <1K, 44% free 3036K/5379K, external 1754K/2138K, paused 102ms
+I/MultiDex(28633): install
+I/MultiDex(28633): MultiDexExtractor.load(/data/app/com.google.android.gms-1.apk, false)
+I/MultiDex(28633): loading existing secondary dex files
+I/MultiDex(28633): load found 1 secondary dex files
+I/MultiDex(28633): install done
+I/ActivityThread(28633): Pub com.google.android.gms.drive: com.google.android.gms.drive.data.sync.syncadapter.DatabaseNotificationContentProvider
+I/ProviderInstaller(28633): Insert disabled by gate 'gms:security:enable_conscrypt_in_gms_application'
+D/PackageBroadcastService( 8715): Received broadcast action=android.intent.action.PACKAGE_REMOVED and uri=cc.gilmore.todo
+D/dalvikvm(  192): GC_EXPLICIT freed 1095K, 35% free 8315K/12743K, external 6181K/7719K, paused 105ms
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=Icing
+D/ActivityGraphModel(  362): 2011/12/07
+D/ActivityGraphModel(  362): receive intent:Intent { act=android.intent.action.PACKAGE_ADDED dat=package:cc.gilmore.todo flg=0x10000000 cmp=com.motorola.mmsp.activitygraph/.ActivityGraphModel (has extras) }
+D/ActivityGraphModel(  362): updateApptoDatabase:cc.gilmore.todo
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AsyncService
+D/ActivityGraphModel(  362): find comp :cc.gilmore.todo/.activity.SimpleTodoActivity
+D/ActivityGraphModel(  362): getGraphyMode:0
+D/ActivityGraphModel(  362): query rank data
+D/ActivityGraphModel(  362): finally
+D/GTalkService(  411): handlePackageInstalled: re-initialize providers
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AsyncService
+D/GTalkService(  411): [RawStanzaProvidersMgr] ##### searchProvidersFromIntent
+D/GTalkService(  411): [RawStanzaProvidersMgr] no intent receivers found
+I/installd(  123): unlink /data/dalvik-cache/data@app@cc.gilmore.todo-1.apk@classes.dex
+E/AndroidRuntime(28620): exception :java.io.FileNotFoundException: /dev/kmsg (Permission denied)
+D/AndroidRuntime(28620): Shutting down VM
+D/dalvikvm(28620): GC_CONCURRENT freed 103K, 69% free 326K/1024K, external 0K/0K, paused 1ms+2ms
+I/AndroidRuntime(28620): NOTE: attach of thread 'Binder Thread #3' failed
+D/jdwp    (28620): Got wake-up signal, bailing out of select
+D/dalvikvm(28620): Debugger has detached; object registry had 1 entries
+D/PackageBroadcastService( 8715): Received broadcast action=android.intent.action.PACKAGE_ADDED and uri=cc.gilmore.todo
+D/PackageAddedReceiver(  411): package added cc.gilmore.todo
+I/PeopleContactsSync( 8715): CP2 sync disabled
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AsyncService
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AsyncService
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/AndroidRuntime(28651): 
+D/AndroidRuntime(28651): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime(28651): CheckJNI is OFF
+D/dalvikvm(28651): creating instr width table
+I/DataUsage(  390): cancelling DataUsage alarm
+I/DataUsage(  390): setting DataUsage alarm
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -112 -90 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+D/dalvikvm(28651): Unable to stat classpath element '/system/app/PeopleCentricWidget.apk'
+D/dalvikvm(28651): Unable to stat classpath element '/system/app/MotoSinaWeather2_Service.apk'
+D/dalvikvm(28651): Unable to stat classpath element '/system/app/MotoSinaWeather2_mdpi.apk'
+D/dalvikvm(28651): Unable to stat classpath element '/system/app/MotoAccuWeather2_mdpi.apk'
+D/PackageBroadcastService( 8715): Received broadcast action=android.intent.action.PACKAGE_REPLACED and uri=cc.gilmore.todo
+D/GCM     (  411): GcmService start Intent { act=com.google.android.gms.INITIALIZE pkg=com.google.android.gms cmp=com.google.android.gms/.gcm.GcmService } com.google.android.gms.INITIALIZE
+I/PeopleContactsSync( 8715): CP2 sync disabled
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/AndroidRuntime(28651): Calling main entry com.android.commands.am.Am
+I/ActivityManager(  192): Force stopping package cc.gilmore.todo uid=10112
+D/HomeActivity(  330): onSaveInstanceState --RUNTIME_STATE_CURRENT_SCREEN==3
+D/HomeActivity(  330): HomeActivity---onPause--enter
+D/Launcher(  330): endDrag---mIsNewShotcutFrMainmenu=false
+I/ActivityManager(  192): Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=cc.gilmore.todo/.activity.SimpleTodoActivity } from pid 28651
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=ActivityManager-Launch
+E/AndroidRuntime(28651): exception :java.io.FileNotFoundException: /dev/kmsg (Permission denied)
+D/AndroidRuntime(28651): Shutting down VM
+I/AndroidRuntime(28651): NOTE: attach of thread 'Binder Thread #3' failed
+D/InputQueue(  192): Registering input channel '40c5bb48 Starting cc.gilmore.todo (client)'
+V/WindowManager(  192): Found focus @ 5 = Window{40a28500 com.motorola.mmsp.threed.motohome/com.motorola.mmsp.threed.motohome.HomeActivity paused=true}
+D/dalvikvm(28651): GC_CONCURRENT freed 104K, 68% free 329K/1024K, external 0K/0K, paused 1ms+1ms
+D/jdwp    (28651): Got wake-up signal, bailing out of select
+D/dalvikvm(28651): Debugger has detached; object registry had 1 entries
+D/HomeActivity(  330): HomeActivity---onPause--exit
+I/ActivityManager(  192): Start proc cc.gilmore.todo for activity cc.gilmore.todo/.activity.SimpleTodoActivity: pid=28665 uid=10112 gids={}
+V/WindowManager(  192): Set focused app to: AppWindowToken{40a07a48 token=HistoryRecord{409b8500 cc.gilmore.todo/.activity.SimpleTodoActivity}}
+D/WindowManager(  192): Input focus has changed to null
+W/ActivityThread(28665): Application cc.gilmore.todo is waiting for the debugger on port 8100...
+I/System.out(28665): Sending WAIT chunk
+V/WindowManager(  192): Found focus @ 12 = Window{40c5fae0 Waiting For Debugger paused=false}
+D/WindowManager(  192): Input focus has changed to Window{40c5fae0 Waiting For Debugger paused=false}
+V/WindowManager(  192): Found focus @ 12 = Window{40c5fae0 Waiting For Debugger paused=false}
+D/InputQueue(  192): Registering input channel '40c5fae0 Waiting For Debugger (client)'
+V/WindowManager(  192): Found focus @ 12 = Window{40c5fae0 Waiting For Debugger paused=false}
+V/WindowManager(  192): Found focus @ 12 = Window{40c5fae0 Waiting For Debugger paused=false}
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=Icing
+V/WifiStateTracker(  192): handleMessage(): msg.what= 8
+D/StatusBarPolicy(  262): updateWifi: android.net.wifi.RSSI_CHANGED : wifi state: 4 supplicant connected: false
+D/StatusBarPolicy(  262): updateWifi RSSI_CHANGED_ACTION newRssi:-71 newSignalLevel: 1 mLastWifiSignalLevel: 2
+D/szipinf (  287): Initializing inflate state
+D/PowerManagerService(  192): updateLightsLocked - 33
+D/PowerManagerService(  192): updateLightsLocked: 0, 0, 1, 0, 0
+D/PowerManagerService(  192): setPowerState: mPowerState=1 newState=0 noChangeLights=false
+D/PowerManagerService(  192):   oldKeyboardBright=false newKeyboardBright=false
+D/PowerManagerService(  192):   oldScreenBright=false newScreenBright=false
+D/PowerManagerService(  192):   oldButtonBright=false newButtonBright=false
+D/PowerManagerService(  192):   oldScreenOn=true newScreenOn=false
+D/PowerManagerService(  192):   oldBatteryLow=false newBatteryLow=false
+I/PowerManagerService(  192): SCREEN_ON_BIT 3 steps:1
+D/PowerManagerService(  192): setScreenStateLocked on=false mDoneBooting=true
+I/power   (  192): *** set_screen_state 0
+W/LightsService(  192): Method(setLightLocked), LightID(BACKLIGHT), Color(0xFF000000), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+W/LightsService(  192): Method(turnOff), LightID(BUTTONS), Color(0x0), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+W/LightsService(  192): Method(setLightLocked), LightID(BUTTONS), Color(0x0), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+W/LightsService(  192): Method(turnOff), LightID(KEYBOARD), Color(0x0), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=sleep_broadcast
+D/SurfaceFlinger(  192): About to give-up screen, flinger = 0x11e658
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=ActivityManager-Sleep
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=ActivityManager-Launch
+D/IronNotifyLed(  382): receiving intent ... <com.fihtdc.action.THIRD_PARTY_APPS_OFF>
+D/IronNotifyLed(  382): Domino-1.1 LED: fullBattery(X), LowBattery(X), LowBatteryCharging(X), charging(O), MissingCall(X), NewMsg(X), NewMail(X), ScreenON(O), 3rdPartyApps(X)
+D/IronNotifyLed(  382): notifyLedAlwaysOn color : 16776960
+D/IronNotifyLed(  382): Led state :isChargingOn 
+D/LightsService(  192): Pre: ScreenOn(false), InCall(false), Lights Size(1), Pending Existing(false)
+W/LightsService(  192): Method(setColor), LightID(BATTERY), Color(0xFF00FF00), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+W/LightsService(  192): Method(turnOff), LightID(NOTIFICATIONS), Color(0x0), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/LightsService(  192): broadcasting <THIRD_PARTY_APPS_OFF> ...
+D/LightsService(  192): Post: ScreenOn(false), InCall(false), Lights Size(1), Pending Existing(false)
+D/LedManagerService(  192): solid color(FFFF00) ...
+W/LightsService(  192): Method(setColor), LightID(FIH), Color(0xFFFF00), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/LiveCounter(  262): action: android.intent.action.SCREEN_OFF
+D/WifiService(  192): BroadcastReceiver action=android.intent.action.SCREEN_OFF
+D/WifiService(  192): Set as DEFAULT_IDLE_MILLIS idleMillis=900000
+D/WifiService(  192): NETWORK_WIFI_SLEEP_POLICY= 2, wifiSleepPolicy = 2
+D/WifiService(  192): ACTION_SCREEN_OFF  WIFI_SLEEP_POLICY=2
+D/WifiService(  192): NETWORK_WIFI_SLEEP_POLICY= 2, wifiSleepPolicy = 2
+D/WifiService(  192): setting ACTION_SLEEP_RESCAN timer for 720000ms time=-720000
+D/WifiService(  192): NETWORK_WIFI_SLEEP_POLICY= 2, wifiSleepPolicy = 2
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+D/DATA    (  290): [DCT(0) ] intent received :android.intent.action.SCREEN_OFF
+D/DATA    (  290): [DCT(0) ] enable_always_on<1>
+I/ONCRPC  (  157): Setup RPC Call for task 80219410
+I/ONCRPC  (  157): oncrpc_xdr_call_msg_start: Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Sent Xid: 486, Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Received Reply Xid: 486, Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): Setup RPC Call for task 80219410
+I/ONCRPC  (  157): oncrpc_xdr_call_msg_start: Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Sent Xid: 487, Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Received Reply Xid: 487, Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+D/DATA    (  290): [DCT(0) ] Start poll NetStat <false>
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=RILJ
+D/IronNotifyLed(  382): receiving intent ... <android.intent.action.SCREEN_OFF>
+D/IronNotifyLed(  382): Domino-1.1 LED: fullBattery(X), LowBattery(X), LowBatteryCharging(X), charging(O), MissingCall(X), NewMsg(X), NewMail(X), ScreenON(X), 3rdPartyApps(X)
+D/IronNotifyLed(  382): notifyLedAlwaysOn color : 16776960
+D/IronNotifyLed(  382): Led state :isChargingOn 
+D/LedManagerService(  192): solid color(FFFF00) ...
+W/LightsService(  192): Method(setColor), LightID(FIH), Color(0xFFFF00), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=Wakeful StateMachine: GeofencerStateMachine
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=Wakeful StateMachine: GeofencerStateMachine
+W/IInputConnectionWrapper(  330): getExtractedText on inactive InputConnection
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=FbClientConnManager
+D/_SIP.WkTimer_(  290): time's up, triggerTime = 3717.2.825: 2
+D/_SIP.WkTimer_(  290): execute @409accd0:10:10:KeepAliveProcess@409e27b0
+V/SipService(  290): acquire wakelock: holder count=1
+V/\KEEPALIVE/(  290): ~~~ keepalive: sip:p8rhPDdd@p8rhPDddmob.phonebooth.com
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=sleep_broadcast
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+W/IInputConnectionWrapper(  330): getExtractedText on inactive InputConnection
+D/_SIP.WkTimer_(  290): after timeout execution
+D/_SIP.WkTimer_(  290):      @409accd0:10:10:KeepAliveProcess@409e27b0: scheduled at 3717.12.825: last at 3717.2.825
+D/_SIP.WkTimer_(  290):      @407d4548:3540:3540:AutoRegistrationProcess@40773708: scheduled at 3738.22.825: last at 3679.26.107
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/szipinf (  287): Initializing inflate state
+W/ActivityManager(  192): Activity pause timeout for HistoryRecord{409b8500 cc.gilmore.todo/.activity.SimpleTodoActivity}
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=ActivityManager-Sleep
+V/SipService(  290): release wakelock: holder count=0
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=FbClientConnManager
+I/dalvikvm(28665): Debugger is active
+V/WifiStateTracker(  192): handleMessage(): msg.what= 8
+I/System.out(28665): Debugger has connected
+I/System.out(28665): waiting for debugger to settle...
+I/System.out(28665): waiting for debugger to settle...
+I/System.out(28665): waiting for debugger to settle...
+I/System.out(28665): waiting for debugger to settle...
+I/System.out(28665): waiting for debugger to settle...
+I/System.out(28665): waiting for debugger to settle...
+I/System.out(28665): waiting for debugger to settle...
+I/System.out(28665): waiting for debugger to settle...
+I/System.out(28665): waiting for debugger to settle...
+I/System.out(28665): debugger has settled (1358)
+D/InputQueue(  192): Unregistering input channel '40c5fae0 Waiting For Debugger (client)'
+D/WindowManager(  192): Input focus has changed to null
+I/FihConfig(  192): can not find this tag <DIS_LOCK_SND_DUR_CALL>in the mUsedConfigData Array
+I/FihConfig(  192): can not find this tag <DIS_LOCK_SND_DUR_CALL>.) in the mAllConfigArray
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=show keyguard
+I/ApkLockScreen(  192): tmp packageName = com.fihtdc.lockscreen
+I/ApkLockScreen(  192): into FihApkLockScreen
+I/ApkLockScreen(  192): onCreate()
+I/ApkLockScreen(  192): packageName in FihParseApkView is: com.fihtdc.lockscreen
+I/ApkLockScreen(  192): [FihLockScreenView]+++++packageName = com.fihtdc.lockscreen
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+I/ApkLockScreen(  192): minWidth = 61441
+I/ApkLockScreen(  192): minHeight = 81921
+I/ApkLockScreen(  192): initialLayout = 2130903041
+I/ApkLockScreen(  192): className = null
+I/SimArgs (  192): stateExtra = READY
+I/SimArgs (  192): stateExtra = READY
+I/SimArgs (  192): stateExtra = READY
+I/ApkLockScreen(  192): find some apk
+D/UnlockScreen(  192): I Have Add a condition to the frameword(isPatternLockTimeOut)false
+D/FihLockScreen(  192): onAttachedToWindow
+I/LockScreenStatusController(  192): reviece battery change
+D/UnlockView(  192): onAttachedToWindow
+I/DateLabel(  192): DateLabel onAttachedToWindow()
+I/DateLabel(  192): DateLabel intent = null
+D/UnlockScreen(  192): I Have Add a condition to the frameword(isPatternLockTimeOut)false
+D/PowerManagerService(  192): setTimeoutLocked now=128593341 timeoutOverride=-1 nextState=0 when=128600341
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=show keyguard
+D/HomeActivity(  330): HomeActivity---CloseSystemDialogsIntentReceiver--reason==lock
+D/LiveCounter(  262): action: android.intent.action.CLOSE_SYSTEM_DIALOGS
+I/LockScreenStatusController(  192): onRefreshBatteryInfo
+V/WindowManager(  192): Found focus @ 12 = Window{40991be8 Keyguard paused=false}
+D/WindowManager(  192): Input focus has changed to Window{40991be8 Keyguard paused=false}
+D/UnlockScreen(  192): I Have Add a condition to the frameword(isPatternLockTimeOut)false
+D/SipSession(  290):  ~~~~~   @4080a848:READY_TO_CALL: READY_TO_CALL: processing OPTIONS sip:98.216.215.33:49586 SIP/2.0
+D/SipSession(  290): Via: SIP/2.0/UDP 50.23.200.18:5090;branch=0
+D/SipSession(  290): From: <sip:pinger@pb2.bandwidth.com>;tag=679484cd
+D/SipSession(  290): To: <sip:98.216.215.33:49586>
+D/SipSession(  290): Call-ID: 9b3a38a5-c8025efb-89539a@50.23.200.18
+D/SipSession(  290): CSeq: 1 OPTIONS
+D/SipSession(  290): Content-Length: 0
+D/SipSession(  290): 
+D/SipHelper(  290): send response: SIP/2.0 200 OK
+D/SipHelper(  290): Via: SIP/2.0/UDP 50.23.200.18:5090;branch=0
+D/SipHelper(  290): From: <sip:pinger@pb2.bandwidth.com>;tag=679484cd
+D/SipHelper(  290): To: <sip:98.216.215.33:49586>
+D/SipHelper(  290): Call-ID: 9b3a38a5-c8025efb-89539a@50.23.200.18
+D/SipHelper(  290): CSeq: 1 OPTIONS
+D/SipHelper(  290): Content-Length: 0
+D/SipHelper(  290): 
+D/SipSession(  290): new state after: READY_TO_CALL
+W/ActivityManager(  192): Activity idle timeout for HistoryRecord{409b8500 cc.gilmore.todo/.activity.SimpleTodoActivity}
+D/cc.gilmore.todo.simple-todos(28665): findAll triggered
+D/cc.gilmore.todo.simple-todos(28665): 4 beans found
+D/InputQueue(28665): Registering input channel '40cc09b8 cc.gilmore.todo/cc.gilmore.todo.activity.SimpleTodoActivity (client)'
+V/WindowManager(  192): Found focus @ 13 = Window{40991be8 Keyguard paused=false}
+D/_SIP.WkTimer_(  290): time's up, triggerTime = 3717.12.825: 2
+D/_SIP.WkTimer_(  290): execute @409accd0:10:10:KeepAliveProcess@409e27b0
+V/SipService(  290): acquire wakelock: holder count=1
+D/_SIP.WkTimer_(  290): after timeout execution
+D/_SIP.WkTimer_(  290):      @409accd0:10:10:KeepAliveProcess@409e27b0: scheduled at 3717.22.825: last at 3717.12.825
+D/_SIP.WkTimer_(  290):      @407d4548:3540:3540:AutoRegistrationProcess@40773708: scheduled at 3738.22.825: last at 3679.26.107
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+V/\KEEPALIVE/(  290): ~~~ keepalive: sip:p8rhPDdd@p8rhPDddmob.phonebooth.com
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+V/SipService(  290): release wakelock: holder count=0
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+D/SipSession(  290):  ~~~~~   @4080a848:READY_TO_CALL: READY_TO_CALL: processing SIP/2.0 200 ok
+D/SipSession(  290): Call-ID: 26d033d2a9a6995d8dbc62414d1427fc@192.168.1.3
+D/SipSession(  290): CSeq: 6244 OPTIONS
+D/SipSession(  290): From: "+19783377548" <sip:p8rhPDdd@p8rhPDddmob.phonebooth.com>;tag=2467362428
+D/SipSession(  290): To: "+19783377548" <sip:p8rhPDdd@p8rhPDddmob.phonebooth.com>;tag=351ec21695cc8535466ca08f05870837.2943
+D/SipSession(  290): Via: SIP/2.0/UDP 192.168.1.3:49586;branch=z9hG4bKae1fa827098df9d68d59488d9d19f26a323235;rport=49586;received=98.216.215.33
+D/SipSession(  290): Server: Phonebooth/1.1.0
+D/SipSession(  290): Content-Length: 0
+D/SipSession(  290): 
+I/AlarmManager(  192): receive ACTION_TIME_TICK
+I/AlarmManager(  192): currentTime MINUTE: 15 currentTime SECOND: 0
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+I/AlarmManager(  192): set  mTimeTickSender
+I/DateLabel(  192): DateLabel receive = android.intent.action.TIME_TICK
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/dalvikvm(27343): GC_CONCURRENT freed 640K, 44% free 3983K/7111K, external 1754K/2138K, paused 4ms+5ms
+D/Finsky  (27343): [1] 5.onFinished: Installation state replication succeeded.
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogKey result=-1 iRes:0  keycode=26 state=0
+I/InputDispatcher(  192): event_report_payload event_id=430 length:3  pEvent->length=14 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+D/PowerManagerService(  192): setScreenStateLocked on=true mDoneBooting=true
+I/power   (  192): *** set_screen_state 1
+D/WindowManager(  192): interceptKeyTq keycode=26 screenIsOn=false keyguardActive=true
+D/KeyguardViewMediator(  192): wakeWhenReadyLocked(26)
+D/PowerManagerService(  192): updateLightsLocked - 33
+D/PowerManagerService(  192): updateLightsLocked: 7, 0, 0, 4, 0
+D/WindowManager(  192): mEndcallBehavior:2 mIncallPowerBehavior:2
+D/WindowManager(  192): mIncallPowerBehavior & Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR_HANGUP2
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=keyguardWakeAndHandOff
+D/PowerManagerService(  192): acquireWakeLock flags=0x1000001a tag=keyguard
+D/PowerManagerService(  192): setPowerState: mPowerState=0 newState=7 noChangeLights=false
+D/PowerManagerService(  192):   oldKeyboardBright=false newKeyboardBright=false
+D/PowerManagerService(  192):   oldScreenBright=false newScreenBright=true
+D/PowerManagerService(  192):   oldButtonBright=false newButtonBright=true
+D/PowerManagerService(  192):   oldScreenOn=false newScreenOn=true
+D/PowerManagerService(  192):   oldBatteryLow=false newBatteryLow=false
+D/WindowManager(  192): interceptKeyBeforeQueueing keycode=26 action=0 flags=8 scanCode=116 policyFlags=33554433 screenIsOn=false mPolicy.interceptKeyBeforeQueueing=0
+W/LightsService(  192): Method(setLightLocked), LightID(BUTTONS), Color(0xFF1E1E1E), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+I/PowerManagerService(  192): SCREEN_ON_BIT 3 steps:1
+D/UnlockScreen(  192): I Have Add a condition to the frameword(isPatternLockTimeOut)false
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=sleep_broadcast
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=keyguardWakeAndHandOff
+W/LightsService(  192): Method(setLightLocked), LightID(BACKLIGHT), Color(0xFF1E1E1E), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+V/WindowManager(  192): Found focus @ 13 = Window{40991be8 Keyguard paused=false}
+V/WindowManager(  192): Found focus @ 13 = Window{40991be8 Keyguard paused=false}
+D/IronNotifyLed(  382): receiving intent ... <com.fihtdc.action.THIRD_PARTY_APPS_OFF>
+D/IronNotifyLed(  382): Domino-1.1 LED: fullBattery(X), LowBattery(X), LowBatteryCharging(X), charging(O), MissingCall(X), NewMsg(X), NewMail(X), ScreenON(X), 3rdPartyApps(X)
+D/IronNotifyLed(  382): notifyLedAlwaysOn color : 16776960
+D/IronNotifyLed(  382): Led state :isChargingOn 
+D/LightsService(  192): Pre: ScreenOn(true), InCall(false), Lights Size(1), Pending Existing(false)
+W/LightsService(  192): Method(setColor), LightID(BATTERY), Color(0xFF00FF00), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+W/LightsService(  192): Method(turnOff), LightID(NOTIFICATIONS), Color(0x0), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/LightsService(  192): broadcasting <THIRD_PARTY_APPS_OFF> ...
+D/LightsService(  192): Post: ScreenOn(true), InCall(false), Lights Size(1), Pending Existing(false)
+D/LedManagerService(  192): solid color(FFFF00) ...
+W/LightsService(  192): Method(setColor), LightID(FIH), Color(0xFFFF00), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/WifiService(  192): BroadcastReceiver action=android.intent.action.SCREEN_ON
+D/WifiService(  192): Set as DEFAULT_IDLE_MILLIS idleMillis=900000
+D/WifiService(  192): ACTION_SCREEN_ON
+E/WifiService(  192): Handle MESSAGE_UPDATE_STATE.
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*wifi*
+E/WifiService(  192): Handle MESSAGE_ENABLE_WIFI.
+E/WifiService(  192): Handle MESSAGE_START_WIFI.
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=*wifi*
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+I/ONCRPC  (  157): Setup RPC Call for task 80219410
+I/ONCRPC  (  157): oncrpc_xdr_call_msg_start: Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Sent Xid: 488, Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Received Reply Xid: 488, Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): Setup RPC Call for task 80219410
+I/ONCRPC  (  157): oncrpc_xdr_call_msg_start: Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Sent Xid: 489, Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Received Reply Xid: 489, Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): Setup RPC Call for task 80219410
+I/ONCRPC  (  157): oncrpc_xdr_call_msg_start: Prog: 30000000, Ver: 9cac4f71, Proc: 00000034
+I/ONCRPC  (  157): xdr_std_msg_send_call: Sent Xid: 48a, Prog: 30000000, Ver: 9cac4f71, Proc: 00000034
+I/ONCRPC  (  157): xdr_std_msg_send_call: Received Reply Xid: 48a, Prog: 30000000, Ver: 9cac4f71, Proc: 00000034
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c166, Prog: 31000000, Vers: fc37ad5c, Proc: 00000005
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c166
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c166
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=RILJ
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c167, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c167
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c167
+D/DATA    (  290): [DCT(0) ] intent received :android.intent.action.SCREEN_ON
+D/DATA    (  290): [DCT(0) ] enable_always_on<1>
+D/DATA    (  290): [DCT(0) ] Start poll NetStat <false>
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c168, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c168
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c168
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c169, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c169
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c169
+D/IronNotifyLed(  382): receiving intent ... <android.intent.action.SCREEN_ON>
+D/IronNotifyLed(  382): Domino-1.1 LED: fullBattery(X), LowBattery(X), LowBatteryCharging(X), charging(O), MissingCall(X), NewMsg(X), NewMail(X), ScreenON(O), 3rdPartyApps(X)
+D/IronNotifyLed(  382): notifyLedAlwaysOn color : 16776960
+D/IronNotifyLed(  382): Led state :isChargingOn 
+D/LedManagerService(  192): solid color(FFFF00) ...
+W/LightsService(  192): Method(setColor), LightID(FIH), Color(0xFFFF00), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=Wakeful StateMachine: GeofencerStateMachine
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=Wakeful StateMachine: GeofencerStateMachine
+D/ServiceStateTracker(  290): signalStrength = 99, rssi = 255
+D/ServiceStateTracker(  290): signalStrength = 99, rssi = 255
+D/ServiceStateTracker(  290): signalStrength = 99, rssi = 255
+D/DATA    (  290): [DSST(0)] pollstate() : reason = data network state changed
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+I/ONCRPC  (  157): Setup RPC Call for task 80219410
+I/ONCRPC  (  157): oncrpc_xdr_call_msg_start: Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Sent Xid: 48b, Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Received Reply Xid: 48b, Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=RILJ
+D/WindowManager(  192): interceptKeyTq keycode=26 screenIsOn=true keyguardActive=true
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogKey result=-1 iRes:0  keycode=26 state=1
+I/InputDispatcher(  192): event_report_payload event_id=430 length:3  pEvent->length=14 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/TelephonyProvider(  290): MVNO = false, sim spn = "republic"
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=sleep_broadcast
+D/WindowManager(  192): interceptKeyBeforeQueueing keycode=26 action=1 flags=8 scanCode=116 policyFlags=33554433 screenIsOn=true mPolicy.interceptKeyBeforeQueueing=0
+D/TelephonyProvider(  290): updated = 1, Setting numeric '31000' to be the current operator
+I/FihConfig(  192): can not find this tag <DELAY_AIRPLANE>in the mUsedConfigData Array
+I/FihConfig(  192): can not find this tag <DELAY_AIRPLANE>.) in the mAllConfigArray
+I/GlobalActions(  192): onServiceStateChanged()- inAirplaneMode = false
+I/TelephonyRegistry(  192): notifyServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0
+D/PollingManager(  327): phone state: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0
+D/ClientService(  357): checkInService, + state: 0 network type: 7
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+V/StatusBarPolicy(  262): Cdma ROAMING_INDICATOR_OFF, removing ERI icon
+D/StatusBarPolicy(  262): updateDataIcon mSimState: READY hasService=true mServiceState.getRadioTechnology(): 6 mDataState: 0
+D/DATA    (  290): [DSST(0)] Poll ServiceState done: oldSS=[0 home null null null  1xRTT(subscription=0) CSS not supported -1 -1RoamInd: -1DefRoamInd: -1EmergOnly: falsechannel: 0] newSS=[0 home null null null  1xRTT(subscription=0) CSS not supported -1 -1RoamInd: -1DefRoamInd: -1EmergOnly: falsechannel: 0]
+D/CallManager(  290):  handleMessage (EVENT_SERVICE_STATE_CHANGED)
+D/ClientService(  357): State Change,  Roaming: false Emergency: 0 Service: true
+D/PhoneApp(  290): PhoneAppBroadcastReceiver action=android.intent.action.SERVICE_STATE
+D/StatusBarPolicy(  262): getRadioTechnology,oldValue: 6 newValue: 6
+I/AirplaneModeToggle(  286): OnReceive :Intent { act=android.intent.action.SERVICE_STATE flg=0x20000000 cmp=com.motorola.togglewidgets/.AirplaneModeToggle (has extras) }
+I/AirplaneModeToggle(  286): getServiceState.DISABLED_STATE
+I/AirplaneModeToggle(  286): getServiceState.DISABLED_STATE
+I/AirplaneModeToggle(  286): needDelay is true
+I/AirplaneModeToggle(  286): UpdateWidget by component name, currentState:DISABLED_STATE
+I/AirplaneModeToggle(  286): getLaunchPendingIntent needDelay:true
+I/AirplaneModeToggle(  286): updateButtons
+I/AirplaneModeToggle(  286): sleep 2s
+D/SurfaceFlinger(  192): Screen about to return, flinger = 0x11e658
+I/dun_service(  132): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  132): Post event 1
+I/dun_service(  132): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  132): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  132): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  132): Moved to state(DUN_STATE_USB_UNPLUG)
+W/Vold    (  117): USB online = 1
+D/PowerManagerService(  192): lightSensorChangedLocked 2
+W/LightsService(  192): Method(setLightLocked), LightID(BUTTONS), Color(0xFF4B4B4B), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+W/LightsService(  192): Method(setLightLocked), LightID(KEYBOARD), Color(0xFF000000), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/BatteryService(  192): mForbidHalting[false] mForbidOTP[false]
+D/BatteryService(  192): Post: Temp(280), Status(2), Health(2), Level(99), PlugType(2), AC(false), USB(true)
+D/PowerManagerService(  192): lightSensorChangedLocked 0
+I/InputDispatcher(  192): Sample 0 :(472.00, 296.00) => (472.00, 296.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=472 y=296 state=0
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+D/InputTransport(  192): channel '40991be8 Keyguard (server)' publisher ~ publishMotionEvent: deviceId=65538, source=0x1002, action=0x0, flags=0x0, edgeFlags=0x0, metaState=0x0, xOffset=0.000000, yOffset=-38.000000, xPrecision=1.000000, yPrecision=1.000000, downTime=128602663336829, eventTime=128602663336829, pointerCount=1
+V/ViewRoot(  192): Keyguard got MotionEvent{4091a6c0 action=0 x=472.0 y=258.0 pressure=1.0 size=0.0}
+D/PowerManagerService(  192): userActivity mLastEventTime=128528082 time=128602663 mUserActivityAllowed=false mUserState=0x0 mWakeLockState=0x7 mProximitySensorActive=false timeoutOverride=-1 force=false
+I/InputDispatcher(  192): Sample 0 :(470.00, 295.00) => (470.00, 295.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=470 y=295 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(468.00, 295.00) => (468.00, 295.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=468 y=295 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(463.00, 294.00) => (463.00, 294.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=463 y=294 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(448.00, 292.00) => (448.00, 292.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=448 y=292 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+D/PowerManagerService(  192): acquireWakeLock flags=0x1000001a tag=keyguard
+I/InputDispatcher(  192): Sample 0 :(424.00, 297.00) => (424.00, 297.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=424 y=297 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(414.00, 301.00) => (414.00, 301.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=414 y=301 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(383.00, 322.00) => (383.00, 322.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=383 y=322 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(377.00, 326.00) => (377.00, 326.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=377 y=326 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(359.00, 342.00) => (359.00, 342.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=359 y=342 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(340.00, 356.00) => (340.00, 356.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=340 y=356 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(324.00, 374.00) => (324.00, 374.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=324 y=374 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(308.00, 394.00) => (308.00, 394.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=308 y=394 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(291.00, 417.00) => (291.00, 417.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=291 y=417 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(284.00, 426.00) => (284.00, 426.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=284 y=426 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+D/PowerManagerService(  192): userActivity mLastEventTime=128602663 time=128602976 mUserActivityAllowed=false mUserState=0x0 mWakeLockState=0x7 mProximitySensorActive=false timeoutOverride=-1 force=false
+I/InputDispatcher(  192): Sample 0 :(277.00, 440.00) => (277.00, 440.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=277 y=440 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+D/PowerManagerService(  192): acquireWakeLock flags=0x1000001a tag=keyguard
+I/InputDispatcher(  192): Sample 0 :(273.00, 449.00) => (273.00, 449.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=273 y=449 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(271.00, 452.00) => (271.00, 452.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=271 y=452 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(269.00, 455.00) => (269.00, 455.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=269 y=455 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(267.00, 461.00) => (267.00, 461.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=267 y=461 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(266.00, 465.00) => (266.00, 465.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=266 y=465 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(270.00, 470.00) => (270.00, 470.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=270 y=470 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(305.00, 494.00) => (305.00, 494.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=305 y=494 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(339.00, 514.00) => (339.00, 514.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=339 y=514 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(370.00, 542.00) => (370.00, 542.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=370 y=542 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(401.00, 568.00) => (401.00, 568.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=401 y=568 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(438.00, 626.00) => (438.00, 626.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=438 y=626 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+D/PowerManagerService(  192): acquireWakeLock flags=0x1000001a tag=keyguard
+I/InputDispatcher(  192): Sample 0 :(458.00, 643.00) => (458.00, 643.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=458 y=643 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(460.00, 645.00) => (460.00, 645.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=460 y=645 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(459.00, 645.00) => (459.00, 645.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=459 y=645 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(458.00, 644.00) => (458.00, 644.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=458 y=644 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(446.00, 629.00) => (446.00, 629.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=446 y=629 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(436.00, 608.00) => (436.00, 608.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=436 y=608 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(434.00, 592.00) => (434.00, 592.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=434 y=592 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(432.00, 583.00) => (432.00, 583.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=432 y=583 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(430.00, 573.00) => (430.00, 573.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=430 y=573 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(427.00, 552.00) => (427.00, 552.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=427 y=552 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(425.00, 530.00) => (425.00, 530.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=425 y=530 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(425.00, 520.00) => (425.00, 520.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=425 y=520 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+D/PowerManagerService(  192): userActivity mLastEventTime=128602976 time=128603482 mUserActivityAllowed=false mUserState=0x0 mWakeLockState=0x7 mProximitySensorActive=false timeoutOverride=-1 force=false
+I/InputDispatcher(  192): Sample 0 :(424.00, 509.00) => (424.00, 509.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=424 y=509 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+D/PowerManagerService(  192): acquireWakeLock flags=0x1000001a tag=keyguard
+I/InputDispatcher(  192): Sample 0 :(423.00, 500.00) => (423.00, 500.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=423 y=500 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(422.00, 477.00) => (422.00, 477.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=422 y=477 state=1
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+I/InputDispatcher(  192): Sample 0 :(423.00, 464.00) => (423.00, 464.00)
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogPenTapSaveToFile result=-1 iRes:0 x=423 y=464 state=2
+I/InputDispatcher(  192): event_report_payload event_id=431 length:5  pEvent->length=16 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+D/InputTransport(  192): channel '40991be8 Keyguard (server)' publisher ~ publishMotionEvent: deviceId=65538, source=0x1002, action=0x1, flags=0x0, edgeFlags=0x0, metaState=0x0, xOffset=0.000000, yOffset=-38.000000, xPrecision=1.000000, yPrecision=1.000000, downTime=128602663336829, eventTime=128603583060163, pointerCount=1
+V/ViewRoot(  192): Keyguard got MotionEvent{4091a6c0 action=1 x=423.0 y=426.0 pressure=1.0 size=0.0}
+D/UnlockScreen(  192): I Have Add a condition to the frameword(isPatternLockTimeOut)false
+D/PowerManagerService(  192): userActivity mLastEventTime=128603482 time=128603583 mUserActivityAllowed=false mUserState=0x0 mWakeLockState=0x7 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  192): updateLightsLocked - 33
+D/PowerManagerService(  192): userActivity mLastEventTime=128603583 time=128603629 mUserActivityAllowed=true mUserState=0x0 mWakeLockState=0x7 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  192): setTimeoutLocked now=128603629 timeoutOverride=-1 nextState=3 when=128609629
+D/PowerManagerService(  192): releaseWakeLock flags=0x1000001a tag=keyguard
+D/PowerManagerService(  192): setPowerState: mPowerState=7 newState=3 noChangeLights=false
+D/PowerManagerService(  192):   oldKeyboardBright=false newKeyboardBright=false
+D/PowerManagerService(  192):   oldScreenBright=true newScreenBright=true
+D/PowerManagerService(  192):   oldButtonBright=true newButtonBright=false
+D/PowerManagerService(  192):   oldScreenOn=true newScreenOn=true
+D/PowerManagerService(  192):   oldBatteryLow=false newBatteryLow=false
+D/WindowManager(  192): Input focus has changed to null
+V/WindowManager(  192): Found focus @ 6 = Window{40cc09b8 cc.gilmore.todo/cc.gilmore.todo.activity.SimpleTodoActivity paused=false}
+D/WindowManager(  192): Input focus has changed to Window{40cc09b8 cc.gilmore.todo/cc.gilmore.todo.activity.SimpleTodoActivity paused=false}
+I/ActivityManager(  192): Displayed cc.gilmore.todo/.activity.SimpleTodoActivity: +16s898ms (total +24m23s221ms)
+D/InputQueue(  192): Unregistering input channel '40c5bb48 Starting cc.gilmore.todo (client)'
+V/WindowManager(  192): Found focus @ 6 = Window{40cc09b8 cc.gilmore.todo/cc.gilmore.todo.activity.SimpleTodoActivity paused=false}
+I/FihConfig(28665): can not find this tag <SYSTEM_CUST_HANDWRITING>in the mUsedConfigData Array
+V/WindowManager(  192): Desired input method target=Window{40cc09b8 cc.gilmore.todo/cc.gilmore.todo.activity.SimpleTodoActivity paused=false} willMove=false
+D/Swype   (  276): inputMethodInit()
+I/AirplaneModeToggle(  286): UpdateWidget by component name, currentState:DISABLED_STATE
+I/AirplaneModeToggle(  286): getLaunchPendingIntent needDelay:false
+I/AirplaneModeToggle(  286): updateButtons
+V/WindowManager(  192): Found focus @ 6 = Window{40cc09b8 cc.gilmore.todo/cc.gilmore.todo.activity.SimpleTodoActivity paused=false}
+V/WindowManager(  192): Desired input method target=Window{40cc09b8 cc.gilmore.todo/cc.gilmore.todo.activity.SimpleTodoActivity paused=false} willMove=true
+I/ApkLockScreen(  192): onPause()
+I/ApkLockScreen(  192): cleanUp()
+D/UnlockView(  192): onDetachedFromWindow
+I/tea     (  192): kill one
+I/DateLabel(  192): DateLabel onDetachedFromWindow()
+D/FihLockScreen(  192): onDetachedFromWindow
+I/tea     (  192): kill one
+I/tea     (  192): kill one
+D/UnlockView(  192): onDetachedFromWindow
+I/tea     (  192): kill one
+W/System.err(  192): java.lang.IllegalArgumentException: Receiver not registered: com.fihtdc.lockscreen.KeyguardUpdateMonitor$3@40a02120
+W/System.err(  192): 	at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java:610)
+W/System.err(  192): 	at android.app.ContextImpl.unregisterReceiver(ContextImpl.java:823)
+W/System.err(  192): 	at com.fihtdc.lockscreen.KeyguardUpdateMonitor.removeCallback(KeyguardUpdateMonitor.java:486)
+W/System.err(  192): 	at com.fihtdc.lockscreen.CarrierLabel.onDetachedFromWindow(CarrierLabel.java:69)
+W/System.err(  192): 	at android.view.View.dispatchDetachedFromWindow(View.java:6186)
+W/System.err(  192): 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:1303)
+W/System.err(  192): 	at android.view.ViewGroup.removeAllViewsInLayout(ViewGroup.java:2443)
+W/System.err(  192): 	at android.view.ViewGroup.removeAllViews(ViewGroup.java:2401)
+W/System.err(  192): 	at com.fihtdc.lockscreen.FihLockScreen.onDetachedFromWindow(FihLockScreen.java:97)
+W/System.err(  192): 	at android.view.View.dispatchDetachedFromWindow(View.java:6186)
+W/System.err(  192): 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:1305)
+W/System.err(  192): 	at android.view.ViewGroup.removeAllViewsInLayout(ViewGroup.java:2443)
+W/System.err(  192): 	at android.view.ViewGroup.removeAllViews(ViewGroup.java:2401)
+W/System.err(  192): 	at com.android.internal.policy.impl.FihApkLockScreen.cleanUp(FihApkLockScreen.java:160)
+W/System.err(  192): 	at com.android.internal.policy.impl.LockPatternKeyguardView.cleanUp(LockPatternKeyguardView.java:511)
+W/System.err(  192): 	at com.android.internal.policy.impl.KeyguardViewManager$1.run(KeyguardViewManager.java:266)
+W/System.err(  192): 	at android.os.Handler.handleCallback(Handler.java:587)
+W/System.err(  192): 	at android.os.Handler.dispatchMessage(Handler.java:92)
+W/System.err(  192): 	at android.os.Looper.loop(Looper.java:130)
+W/System.err(  192): 	at com.android.server.WindowManagerService$PolicyThread.run(WindowManagerService.java:639)
+D/dalvikvm(  276): GC_EXTERNAL_ALLOC freed 799K, 56% free 3390K/7623K, external 8025K/8378K, paused 92ms
+D/dalvikvm(  192): GC_EXPLICIT freed 1628K, 34% free 8425K/12743K, external 6912K/7719K, paused 183ms
+D/LowMemoryDialogActivity(  451): Intent: LowMemory
+W/LowMemoryDialogActivity(  451): FreeMem = 42487808; ThresholdMem = 40671640
+V/WifiStateTracker(  192): handleMessage(): msg.what= 8
+D/StatusBarPolicy(  262): updateWifi: android.net.wifi.RSSI_CHANGED : wifi state: 4 supplicant connected: false
+D/StatusBarPolicy(  262): updateWifi RSSI_CHANGED_ACTION newRssi:-65 newSignalLevel: 2 mLastWifiSignalLevel: 1
+D/ServiceStateTracker(  290): signalStrength = 99, rssi = 255
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c16d, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c16d
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c16d
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -124 -190 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+D/ServiceStateTracker(  290): signalStrength = 99, rssi = 255
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c16f, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c16f
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c16f
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+D/SlateService(  192): onSignalStrengthsChanged:SignalStrength: 99 99 255 -123 -170 -120 -1 -1 99 2147483647 -32767 2147483647 -32767 cdma
+I/ONCRPC  (  157): rpc_handle_rpc_call: for Xid: c170, Prog: 31000000, Vers: fc37ad5c, Proc: 00000012
+I/ONCRPC  (  157): rpc_handle_rpc_call: Find Status: 0 Xid: c170
+I/ONCRPC  (  157): oncrpc_proxy_handle_cmd_rpc_call: Dispatching xid: c170
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+D/ServiceStateTracker(  290): signalStrength = 99, rssi = 255
+D/DATA    (  290): [DSST(0)] pollstate() : reason = data network state changed
+I/ONCRPC  (  157): Setup RPC Call for task 80219410
+I/ONCRPC  (  157): oncrpc_xdr_call_msg_start: Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Sent Xid: 48c, Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Received Reply Xid: 48c, Prog: 3000000e, Ver: 00090001, Proc: 0000000a
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=RILJ
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=RILJ
+I/TelephonyProvider(  290): MVNO = false, sim spn = "republic"
+D/TelephonyProvider(  290): updated = 1, Setting numeric '31000' to be the current operator
+I/FihConfig(  192): can not find this tag <DELAY_AIRPLANE>in the mUsedConfigData Array
+I/FihConfig(  192): can not find this tag <DELAY_AIRPLANE>.) in the mAllConfigArray
+I/GlobalActions(  192): onServiceStateChanged()- inAirplaneMode = false
+D/PollingManager(  327): phone state: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0
+D/ClientService(  357): checkInService, + state: 0 network type: 7
+D/ClientService(  357): State Change,  Roaming: false Emergency: 0 Service: true
+I/TelephonyRegistry(  192): notifyServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0
+D/StatusBarPolicy(  262): updateSignalStrength,ServiceState: 0 home republic 1023111 1023111  1xRTT(subscription=0) CSS not supported 2 4106RoamInd: 1DefRoamInd: 1EmergOnly: falsechannel: 0 RadioTechnology: 6 isCDMA: true
+V/StatusBarPolicy(  262): Cdma ROAMING_INDICATOR_OFF, removing ERI icon
+D/StatusBarPolicy(  262): updateDataIcon mSimState: READY hasService=true mServiceState.getRadioTechnology(): 6 mDataState: 0
+D/StatusBarPolicy(  262): getRadioTechnology,oldValue: 6 newValue: 6
+I/AirplaneModeToggle(  286): OnReceive :Intent { act=android.intent.action.SERVICE_STATE flg=0x20000000 cmp=com.motorola.togglewidgets/.AirplaneModeToggle (has extras) }
+I/AirplaneModeToggle(  286): getServiceState.DISABLED_STATE
+I/AirplaneModeToggle(  286): getServiceState.DISABLED_STATE
+I/AirplaneModeToggle(  286): needDelay is true
+I/AirplaneModeToggle(  286): UpdateWidget by component name, currentState:DISABLED_STATE
+I/AirplaneModeToggle(  286): getLaunchPendingIntent needDelay:true
+D/DATA    (  290): [DSST(0)] Poll ServiceState done: oldSS=[0 home null null null  1xRTT(subscription=0) CSS not supported -1 -1RoamInd: -1DefRoamInd: -1EmergOnly: falsechannel: 0] newSS=[0 home null null null  1xRTT(subscription=0) CSS not supported -1 -1RoamInd: -1DefRoamInd: -1EmergOnly: falsechannel: 0]
+D/CallManager(  290):  handleMessage (EVENT_SERVICE_STATE_CHANGED)
+D/PhoneApp(  290): PhoneAppBroadcastReceiver action=android.intent.action.SERVICE_STATE
+I/AirplaneModeToggle(  286): updateButtons
+I/AirplaneModeToggle(  286): sleep 2s
+D/WindowManager(  192): interceptKeyTq keycode=26 screenIsOn=true keyguardActive=false
+D/WindowManager(  192): mEndcallBehavior:2 mIncallPowerBehavior:2
+D/WindowManager(  192): mIncallPowerBehavior & Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR_HANGUP2
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogKey result=-1 iRes:0  keycode=26 state=0
+I/InputDispatcher(  192): event_report_payload event_id=430 length:3  pEvent->length=14 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+D/WindowManager(  192): interceptKeyBeforeQueueing keycode=26 action=0 flags=8 scanCode=116 policyFlags=33554433 screenIsOn=true mPolicy.interceptKeyBeforeQueueing=0
+D/WindowManager(  192): interceptKeyTq keycode=26 screenIsOn=true keyguardActive=false
+D/PowerManagerService(  192): updateLightsLocked - 33
+D/PowerManagerService(  192): updateLightsLocked: 0, 0, 3, 0, 0
+W/InputDispatcher(  192): slateLogKey ro.SYSTEM_ENALBE_SLATE_DC_TEST propValue=true
+W/InputDispatcher(  192): slateLogKey result=-1 iRes:0  keycode=26 state=1
+I/InputDispatcher(  192): event_report_payload event_id=430 length:3  pEvent->length=14 pEvent->event_id.event_id_field.payload_len=3
+E/InputDispatcher(  192): Event_report_payload: Failed to write keypress event to kernel, error = 5
+D/PowerManagerService(  192): setScreenStateLocked on=false mDoneBooting=true
+I/power   (  192): *** set_screen_state 0
+D/WindowManager(  192): interceptKeyBeforeQueueing keycode=26 action=1 flags=8 scanCode=116 policyFlags=33554433 screenIsOn=true mPolicy.interceptKeyBeforeQueueing=4
+D/PowerManagerService(  192): setPowerState: mPowerState=3 newState=0 noChangeLights=false
+D/PowerManagerService(  192):   oldKeyboardBright=false newKeyboardBright=false
+D/PowerManagerService(  192):   oldScreenBright=true newScreenBright=false
+D/PowerManagerService(  192):   oldButtonBright=false newButtonBright=false
+D/PowerManagerService(  192):   oldScreenOn=true newScreenOn=false
+D/PowerManagerService(  192):   oldBatteryLow=false newBatteryLow=false
+I/PowerManagerService(  192): SCREEN_ON_BIT 3 steps:1
+W/LightsService(  192): Method(setLightLocked), LightID(BACKLIGHT), Color(0xFF000000), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+I/FihConfig(  192): can not find this tag <DIS_LOCK_SND_DUR_CALL>in the mUsedConfigData Array
+I/FihConfig(  192): can not find this tag <DIS_LOCK_SND_DUR_CALL>.) in the mAllConfigArray
+I/ApkLockScreen(  192): tmp packageName = com.fihtdc.lockscreen
+I/ApkLockScreen(  192): into FihApkLockScreen
+I/ApkLockScreen(  192): onCreate()
+I/ApkLockScreen(  192): packageName in FihParseApkView is: com.fihtdc.lockscreen
+I/ApkLockScreen(  192): [FihLockScreenView]+++++packageName = com.fihtdc.lockscreen
+I/ApkLockScreen(  192): minWidth = 61441
+I/ApkLockScreen(  192): minHeight = 81921
+I/ApkLockScreen(  192): initialLayout = 2130903041
+I/ApkLockScreen(  192): className = null
+W/LightsService(  192): Method(turnOff), LightID(BUTTONS), Color(0x0), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+W/LightsService(  192): Method(setLightLocked), LightID(BUTTONS), Color(0x0), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+W/LightsService(  192): Method(turnOff), LightID(KEYBOARD), Color(0x0), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+W/LightsService(  192): Method(setLightLocked), LightID(KEYBOARD), Color(0x0), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=sleep_broadcast
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=show keyguard
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=ActivityManager-Sleep
+D/SurfaceFlinger(  192): About to give-up screen, flinger = 0x11e658
+I/SimArgs (  192): stateExtra = READY
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=ActivityManager-Sleep
+I/SimArgs (  192): stateExtra = READY
+I/SimArgs (  192): stateExtra = READY
+I/ApkLockScreen(  192): find some apk
+D/UnlockScreen(  192): I Have Add a condition to the frameword(isPatternLockTimeOut)false
+D/FihLockScreen(  192): onAttachedToWindow
+I/LockScreenStatusController(  192): reviece battery change
+D/UnlockView(  192): onAttachedToWindow
+I/DateLabel(  192): DateLabel onAttachedToWindow()
+I/DateLabel(  192): DateLabel intent = null
+D/UnlockScreen(  192): I Have Add a condition to the frameword(isPatternLockTimeOut)false
+D/LiveCounter(  262): action: android.intent.action.CLOSE_SYSTEM_DIALOGS
+D/HomeActivity(  330): HomeActivity---CloseSystemDialogsIntentReceiver--reason==lock
+D/PowerManagerService(  192): setTimeoutLocked now=128607672 timeoutOverride=-1 nextState=0 when=128614672
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=show keyguard
+I/LockScreenStatusController(  192): onRefreshBatteryInfo
+V/WifiStateTracker(  192): handleMessage(): msg.what= 8
+D/UnlockScreen(  192): I Have Add a condition to the frameword(isPatternLockTimeOut)false
+V/WindowManager(  192): Found focus @ 12 = Window{40991be8 Keyguard paused=false}
+V/WindowManager(  192): Desired input method target=Window{40cc09b8 cc.gilmore.todo/cc.gilmore.todo.activity.SimpleTodoActivity paused=false} willMove=true
+D/WindowManager(  192): Input focus has changed to Window{40991be8 Keyguard paused=false}
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+I/AirplaneModeToggle(  286): UpdateWidget by component name, currentState:DISABLED_STATE
+I/AirplaneModeToggle(  286): getLaunchPendingIntent needDelay:false
+I/AirplaneModeToggle(  286): updateButtons
+D/IronNotifyLed(  382): receiving intent ... <com.fihtdc.action.THIRD_PARTY_APPS_OFF>
+D/IronNotifyLed(  382): Domino-1.1 LED: fullBattery(X), LowBattery(X), LowBatteryCharging(X), charging(O), MissingCall(X), NewMsg(X), NewMail(X), ScreenON(O), 3rdPartyApps(X)
+D/IronNotifyLed(  382): notifyLedAlwaysOn color : 16776960
+D/IronNotifyLed(  382): Led state :isChargingOn 
+D/LightsService(  192): Pre: ScreenOn(false), InCall(false), Lights Size(1), Pending Existing(false)
+W/LightsService(  192): Method(setColor), LightID(BATTERY), Color(0xFF00FF00), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+W/LightsService(  192): Method(turnOff), LightID(NOTIFICATIONS), Color(0x0), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/LightsService(  192): broadcasting <THIRD_PARTY_APPS_OFF> ...
+D/LedManagerService(  192): solid color(FFFF00) ...
+W/LightsService(  192): Method(setColor), LightID(FIH), Color(0xFFFF00), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/LightsService(  192): Post: ScreenOn(false), InCall(false), Lights Size(1), Pending Existing(false)
+D/LiveCounter(  262): action: android.intent.action.SCREEN_OFF
+D/WifiService(  192): BroadcastReceiver action=android.intent.action.SCREEN_OFF
+D/WifiService(  192): Set as DEFAULT_IDLE_MILLIS idleMillis=900000
+D/WifiService(  192): NETWORK_WIFI_SLEEP_POLICY= 2, wifiSleepPolicy = 2
+D/WifiService(  192): ACTION_SCREEN_OFF  WIFI_SLEEP_POLICY=2
+D/WifiService(  192): NETWORK_WIFI_SLEEP_POLICY= 2, wifiSleepPolicy = 2
+D/WifiService(  192): setting ACTION_SLEEP_RESCAN timer for 720000ms time=-720000
+D/WifiService(  192): NETWORK_WIFI_SLEEP_POLICY= 2, wifiSleepPolicy = 2
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=RILJ
+I/ONCRPC  (  157): Setup RPC Call for task 80219410
+I/ONCRPC  (  157): oncrpc_xdr_call_msg_start: Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Sent Xid: 48d, Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+D/DATA    (  290): [DCT(0) ] intent received :android.intent.action.SCREEN_OFF
+D/DATA    (  290): [DCT(0) ] enable_always_on<1>
+D/DATA    (  290): [DCT(0) ] Start poll NetStat <false>
+I/ONCRPC  (  157): xdr_std_msg_send_call: Received Reply Xid: 48d, Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): Setup RPC Call for task 80219410
+I/ONCRPC  (  157): oncrpc_xdr_call_msg_start: Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Sent Xid: 48e, Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+I/ONCRPC  (  157): xdr_std_msg_send_call: Received Reply Xid: 48e, Prog: 30000000, Ver: 9cac4f71, Proc: 0000005a
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=RILJ
+D/IronNotifyLed(  382): receiving intent ... <android.intent.action.SCREEN_OFF>
+D/IronNotifyLed(  382): Domino-1.1 LED: fullBattery(X), LowBattery(X), LowBatteryCharging(X), charging(O), MissingCall(X), NewMsg(X), NewMail(X), ScreenON(X), 3rdPartyApps(X)
+D/IronNotifyLed(  382): notifyLedAlwaysOn color : 16776960
+D/IronNotifyLed(  382): Led state :isChargingOn 
+D/LedManagerService(  192): solid color(FFFF00) ...
+W/LightsService(  192): Method(setColor), LightID(FIH), Color(0xFFFF00), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=Wakeful StateMachine: GeofencerStateMachine
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=Wakeful StateMachine: GeofencerStateMachine
+W/IInputConnectionWrapper(28665): getExtractedText on inactive InputConnection
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=FbClientConnManager
+D/_SIP.WkTimer_(  290): time's up, triggerTime = 3717.22.825: 2
+D/_SIP.WkTimer_(  290): execute @409accd0:10:10:KeepAliveProcess@409e27b0
+V/SipService(  290): acquire wakelock: holder count=1
+V/\KEEPALIVE/(  290): ~~~ keepalive: sip:p8rhPDdd@p8rhPDddmob.phonebooth.com
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=sleep_broadcast
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+W/IInputConnectionWrapper(28665): getExtractedText on inactive InputConnection
+D/_SIP.WkTimer_(  290): after timeout execution
+D/_SIP.WkTimer_(  290):      @409accd0:10:10:KeepAliveProcess@409e27b0: scheduled at 3717.32.825: last at 3717.22.825
+D/_SIP.WkTimer_(  290):      @407d4548:3540:3540:AutoRegistrationProcess@40773708: scheduled at 3738.22.825: last at 3679.26.107
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=FbClientConnManager
+V/WifiStateTracker(  192): handleMessage(): msg.what= 8
+D/StatusBarPolicy(  262): updateWifi: android.net.wifi.RSSI_CHANGED : wifi state: 4 supplicant connected: false
+D/StatusBarPolicy(  262): updateWifi RSSI_CHANGED_ACTION newRssi:-79 newSignalLevel: 1 mLastWifiSignalLevel: 2
+V/SipService(  290): release wakelock: holder count=0
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+D/SipSession(  290):  ~~~~~   @4080a848:READY_TO_CALL: READY_TO_CALL: processing SIP/2.0 200 ok
+D/SipSession(  290): Call-ID: 9cc35f61fbff95d6b67852864575d3ee@192.168.1.3
+D/SipSession(  290): CSeq: 7982 OPTIONS
+D/SipSession(  290): From: "+19783377548" <sip:p8rhPDdd@p8rhPDddmob.phonebooth.com>;tag=4019126402
+D/SipSession(  290): To: "+19783377548" <sip:p8rhPDdd@p8rhPDddmob.phonebooth.com>;tag=351ec21695cc8535466ca08f05870837.18f4
+D/SipSession(  290): Via: SIP/2.0/UDP 192.168.1.3:49586;branch=z9hG4bK5a30d41ab4d3f02e2a3e6cdb030ccbfe323235;rport=49586;received=98.216.215.33
+D/SipSession(  290): Server: Phonebooth/1.1.0
+D/SipSession(  290): Content-Length: 0
+D/SipSession(  290): 
+D/SipSession(  290):  ~~~~~   @4080a848:READY_TO_CALL: READY_TO_CALL: processing OPTIONS sip:98.216.215.33:49586 SIP/2.0
+D/SipSession(  290): Via: SIP/2.0/UDP 50.23.200.18:5090;branch=0
+D/SipSession(  290): From: <sip:pinger@pb2.bandwidth.com>;tag=f06584cd
+D/SipSession(  290): To: <sip:98.216.215.33:49586>
+D/SipSession(  290): Call-ID: 9b3a38a5-52d25efb-ca539a@50.23.200.18
+D/SipSession(  290): CSeq: 1 OPTIONS
+D/SipSession(  290): Content-Length: 0
+D/SipSession(  290): 
+D/SipHelper(  290): send response: SIP/2.0 200 OK
+D/SipHelper(  290): Via: SIP/2.0/UDP 50.23.200.18:5090;branch=0
+D/SipHelper(  290): From: <sip:pinger@pb2.bandwidth.com>;tag=f06584cd
+D/SipHelper(  290): To: <sip:98.216.215.33:49586>
+D/SipHelper(  290): Call-ID: 9b3a38a5-52d25efb-ca539a@50.23.200.18
+D/SipHelper(  290): CSeq: 1 OPTIONS
+D/SipHelper(  290): Content-Length: 0
+D/SipHelper(  290): 
+D/SipSession(  290): new state after: READY_TO_CALL
+D/dalvikvm(  290): GC_CONCURRENT freed 2012K, 47% free 5056K/9479K, external 9536K/11178K, paused 8ms+4ms
+D/dalvikvm(28331): GC_EXPLICIT freed 8K, 44% free 3040K/5379K, external 1754K/2138K, paused 48ms
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/_SIP.WkTimer_(  290): time's up, triggerTime = 3717.32.825: 2
+D/_SIP.WkTimer_(  290): execute @409accd0:10:10:KeepAliveProcess@409e27b0
+V/SipService(  290): acquire wakelock: holder count=1
+V/\KEEPALIVE/(  290): ~~~ keepalive: sip:p8rhPDdd@p8rhPDddmob.phonebooth.com
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+D/_SIP.WkTimer_(  290): after timeout execution
+D/_SIP.WkTimer_(  290):      @409accd0:10:10:KeepAliveProcess@409e27b0: scheduled at 3717.42.825: last at 3717.32.825
+D/_SIP.WkTimer_(  290):      @407d4548:3540:3540:AutoRegistrationProcess@40773708: scheduled at 3738.22.825: last at 3679.26.107
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+V/SipService(  290): release wakelock: holder count=0
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+I/dun_service(  132): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  132): Post event 1
+I/dun_service(  132): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  132): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  132): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  132): Moved to state(DUN_STATE_USB_UNPLUG)
+D/BatteryService(  192): mForbidHalting[false] mForbidOTP[false]
+D/UnlockScreen(  192): I Have Add a condition to the frameword(isPatternLockTimeOut)false
+D/Tethering(  192): in onReceive: Setting mUsbConnectedtrue
+D/DATA    (  290): [DCT(0) ] intent received :android.intent.action.BATTERY_CHANGED
+D/StatusBarPolicy(  262): showbatterywaring() show=false
+D/ACUnPlugFeature(  262): plugged=true oldPlugged=true level=100 status=2
+D/ACUnPlugFeature(  262): NewBatteryPlugType=2 OldBatteryPlugType=2
+D/ACUnPlugFeature(  262): status=2
+D/NetdConnector(  192): Send command through default
+D/IronNotifyLed(  382): receiving intent ... <android.intent.action.BATTERY_CHANGED>
+D/IronNotifyLed(  382):  current battery level : 100
+D/IronNotifyLed(  382): Domino-1.1 LED: fullBattery(X), LowBattery(X), LowBatteryCharging(X), charging(O), MissingCall(X), NewMsg(X), NewMail(X), ScreenON(X), 3rdPartyApps(X)
+D/IronNotifyLed(  382): notifyLedAlwaysOn color : 16776960
+D/IronNotifyLed(  382): Led state :isChargingOn 
+D/[BatteryProtectApp](  373): DetectBatteryService:receive ACTION_BATTERY_CHANGED -[System mHealth:2  mTemprature:28]
+D/[BatteryProtectApp](  373): DetectBatteryService:phone not in any mode now,and health is Good
+D/[BatteryProtectApp](  373): DetectBatteryService:-Not need to display
+D/LedManagerService(  192): solid color(FFFF00) ...
+W/LightsService(  192): Method(setColor), LightID(FIH), Color(0xFFFF00), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/BatteryService(  192): Post: Temp(280), Status(2), Health(2), Level(100), PlugType(2), AC(false), USB(true)
+D/dalvikvm(  373): GC_CONCURRENT freed 469K, 56% free 3048K/6791K, external 1754K/2138K, paused 2ms+9ms
+E/Tethering(  192): active iface (usb0) reported as added, ignoring
+I/LockScreenStatusController(  192): reviece battery change
+I/LockScreenStatusController(  192): onRefreshBatteryInfo
+I/BatteryManagerAP(27482): [BatteryManagerDetectService] mLevel=100
+D/WifiService(  192): BroadcastReceiver action=android.intent.action.BATTERY_CHANGED
+D/WifiService(  192): Set as DEFAULT_IDLE_MILLIS idleMillis=900000
+D/WifiService(  192): ACTION_BATTERY_CHANGED pluggedType: 2
+D/WifiService(  192): NETWORK_WIFI_SLEEP_POLICY= 2, wifiSleepPolicy = 2
+D/WifiService(  192): NETWORK_WIFI_SLEEP_POLICY= 2, wifiSleepPolicy = 2
+E/WifiService(  192): Handle MESSAGE_UPDATE_STATE.
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*wifi*
+E/WifiService(  192): Handle MESSAGE_ENABLE_WIFI.
+E/WifiService(  192): Handle MESSAGE_START_WIFI.
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=*wifi*
+D/WifiStateTracker(  192): requestConnectionInfo
+D/WifiStateTracker(  192): requestConnectionStatus
+D/dalvikvm(27921): GC_EXPLICIT freed 21K, 42% free 3665K/6279K, external 1754K/2138K, paused 79ms
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/_SIP.WkTimer_(  290): time's up, triggerTime = 3717.42.825: 2
+D/_SIP.WkTimer_(  290): execute @409accd0:10:10:KeepAliveProcess@409e27b0
+V/SipService(  290): acquire wakelock: holder count=1
+V/\KEEPALIVE/(  290): ~~~ keepalive: sip:p8rhPDdd@p8rhPDddmob.phonebooth.com
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+D/_SIP.WkTimer_(  290): after timeout execution
+D/_SIP.WkTimer_(  290):      @409accd0:10:10:KeepAliveProcess@409e27b0: scheduled at 3717.52.825: last at 3717.42.825
+D/_SIP.WkTimer_(  290):      @407d4548:3540:3540:AutoRegistrationProcess@40773708: scheduled at 3738.22.825: last at 3679.26.107
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+V/SipService(  290): release wakelock: holder count=0
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/SipSession(  290):  ~~~~~   @4080a848:READY_TO_CALL: READY_TO_CALL: processing OPTIONS sip:98.216.215.33:49586 SIP/2.0
+D/SipSession(  290): Via: SIP/2.0/UDP 50.23.200.18:5090;branch=0
+D/SipSession(  290): From: <sip:pinger@pb2.bandwidth.com>;tag=8a2684cd
+D/SipSession(  290): To: <sip:98.216.215.33:49586>
+D/SipSession(  290): Call-ID: 9b3a38a5-eb935efb-0c539a@50.23.200.18
+D/SipSession(  290): CSeq: 1 OPTIONS
+D/SipSession(  290): Content-Length: 0
+D/SipSession(  290): 
+D/SipHelper(  290): send response: SIP/2.0 200 OK
+D/SipHelper(  290): Via: SIP/2.0/UDP 50.23.200.18:5090;branch=0
+D/SipHelper(  290): From: <sip:pinger@pb2.bandwidth.com>;tag=8a2684cd
+D/SipHelper(  290): To: <sip:98.216.215.33:49586>
+D/SipHelper(  290): Call-ID: 9b3a38a5-eb935efb-0c539a@50.23.200.18
+D/SipHelper(  290): CSeq: 1 OPTIONS
+D/SipHelper(  290): Content-Length: 0
+D/SipHelper(  290): 
+D/SipSession(  290): new state after: READY_TO_CALL
+D/dalvikvm(27343): GC_EXPLICIT freed 598K, 47% free 3823K/7111K, external 1754K/2138K, paused 55ms
+D/_SIP.WkTimer_(  290): time's up, triggerTime = 3717.52.825: 2
+D/_SIP.WkTimer_(  290): execute @409accd0:10:10:KeepAliveProcess@409e27b0
+V/SipService(  290): acquire wakelock: holder count=1
+V/\KEEPALIVE/(  290): ~~~ keepalive: sip:p8rhPDdd@p8rhPDddmob.phonebooth.com
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/_SIP.WkTimer_(  290): after timeout execution
+D/_SIP.WkTimer_(  290):      @409accd0:10:10:KeepAliveProcess@409e27b0: scheduled at 3718.2.825: last at 3717.52.825
+D/_SIP.WkTimer_(  290):      @407d4548:3540:3540:AutoRegistrationProcess@40773708: scheduled at 3738.22.825: last at 3679.26.107
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+V/SipService(  290): release wakelock: holder count=0
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+D/dalvikvm(27413): GC_EXPLICIT freed 4K, 44% free 3035K/5379K, external 1754K/2138K, paused 45ms
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/_SIP.WkTimer_(  290): time's up, triggerTime = 3718.2.825: 2
+D/_SIP.WkTimer_(  290): execute @409accd0:10:10:KeepAliveProcess@409e27b0
+V/SipService(  290): acquire wakelock: holder count=1
+V/\KEEPALIVE/(  290): ~~~ keepalive: sip:p8rhPDdd@p8rhPDddmob.phonebooth.com
+D/_SIP.WkTimer_(  290): after timeout execution
+D/_SIP.WkTimer_(  290):      @409accd0:10:10:KeepAliveProcess@409e27b0: scheduled at 3718.12.825: last at 3718.2.825
+D/_SIP.WkTimer_(  290):      @407d4548:3540:3540:AutoRegistrationProcess@40773708: scheduled at 3738.22.825: last at 3679.26.107
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+V/SipService(  290): release wakelock: holder count=0
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+D/dalvikvm(27421): GC_EXPLICIT freed 11K, 44% free 3045K/5379K, external 1754K/2138K, paused 27ms
+D/_SIP.WkTimer_(  290): time's up, triggerTime = 3718.12.825: 2
+D/_SIP.WkTimer_(  290): execute @409accd0:10:10:KeepAliveProcess@409e27b0
+V/SipService(  290): acquire wakelock: holder count=1
+V/\KEEPALIVE/(  290): ~~~ keepalive: sip:p8rhPDdd@p8rhPDddmob.phonebooth.com
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+D/_SIP.WkTimer_(  290): after timeout execution
+D/_SIP.WkTimer_(  290):      @409accd0:10:10:KeepAliveProcess@409e27b0: scheduled at 3718.22.825: last at 3718.12.825
+D/_SIP.WkTimer_(  290):      @407d4548:3540:3540:AutoRegistrationProcess@40773708: scheduled at 3738.22.825: last at 3679.26.107
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+V/SipService(  290): release wakelock: holder count=0
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=SipWakeLock
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=AlarmManager
+I/AlarmManager(  192): set  mTimeTickSender
+I/AlarmManager(  192): receive ACTION_TIME_TICK
+I/AlarmManager(  192): currentTime MINUTE: 16 currentTime SECOND: 0
+I/DateLabel(  192): DateLabel receive = android.intent.action.TIME_TICK
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=AlarmManager
+I/dun_service(  132): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  132): Post event 1
+I/dun_service(  132): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  132): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  132): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  132): Moved to state(DUN_STATE_USB_UNPLUG)
+D/Tethering(  192): in onReceive: Setting mUsbConnectedtrue
+D/BatteryService(  192): mForbidHalting[false] mForbidOTP[false]
+D/UnlockScreen(  192): I Have Add a condition to the frameword(isPatternLockTimeOut)false
+D/NetdConnector(  192): Send command through default
+D/DATA    (  290): [DCT(0) ] intent received :android.intent.action.BATTERY_CHANGED
+D/IronNotifyLed(  382): receiving intent ... <android.intent.action.BATTERY_CHANGED>
+D/IronNotifyLed(  382):  current battery level : 100
+D/IronNotifyLed(  382): Domino-1.1 LED: fullBattery(O), LowBattery(X), LowBatteryCharging(X), charging(X), MissingCall(X), NewMsg(X), NewMail(X), ScreenON(X), 3rdPartyApps(X)
+D/IronNotifyLed(  382): notifyLedAlwaysOn color : 65280
+E/lights  (  192): set_light_fih color:0000FF00, flashOnMS:0, flashOffMS:0
+E/lights  (  192): g_fih colorRGB=0000FF00, mode=0, onMS=0, offMS=0
+W/lights  (  192): set_speaker_light_locked colorRGB=0000FF00, onMS=0, offMS=0
+W/lights  (  192): set_speaker_light_locked flashMode=0
+D/IronNotifyLed(  382): Led state :isFullBatteryOn 
+D/[BatteryProtectApp](  373): DetectBatteryService:receive ACTION_BATTERY_CHANGED -[System mHealth:2  mTemprature:28]
+D/[BatteryProtectApp](  373): DetectBatteryService:phone not in any mode now,and health is Good
+D/[BatteryProtectApp](  373): DetectBatteryService:-Not need to display
+D/StatusBarPolicy(  262): showbatterywaring() show=false
+D/ACUnPlugFeature(  262): plugged=true oldPlugged=true level=100 status=5
+D/ACUnPlugFeature(  262): NewBatteryPlugType=2 OldBatteryPlugType=2
+D/ACUnPlugFeature(  262): status=5
+D/LedManagerService(  192): solid color(FF00) ...
+W/LightsService(  192): Method(setColor), LightID(FIH), Color(0xFF00), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+W/LightsService(  192): Method(setLightLocked), LightID(FIH), Color(0xFF00), Mode(FLASH_NONE), OnMS(0), OffMS(0)
+D/BatteryService(  192): Post: Temp(280), Status(5), Health(2), Level(100), PlugType(2), AC(false), USB(true)
+E/Tethering(  192): active iface (usb0) reported as added, ignoring
+I/LockScreenStatusController(  192): onRefreshBatteryInfo
+I/LockScreenStatusController(  192): reviece battery change
+I/BatteryManagerAP(27482): [BatteryManagerDetectService] mLevel=100
+D/WifiService(  192): BroadcastReceiver action=android.intent.action.BATTERY_CHANGED
+D/WifiService(  192): Set as DEFAULT_IDLE_MILLIS idleMillis=900000
+D/WifiService(  192): ACTION_BATTERY_CHANGED pluggedType: 2
+D/WifiService(  192): NETWORK_WIFI_SLEEP_POLICY= 2, wifiSleepPolicy = 2
+D/WifiService(  192): NETWORK_WIFI_SLEEP_POLICY= 2, wifiSleepPolicy = 2
+E/WifiService(  192): Handle MESSAGE_UPDATE_STATE.
+D/PowerManagerService(  192): acquireWakeLock flags=0x1 tag=*wifi*
+E/WifiService(  192): Handle MESSAGE_ENABLE_WIFI.
+E/WifiService(  192): Handle MESSAGE_START_WIFI.
+D/PowerManagerService(  192): releaseWakeLock flags=0x1 tag=*wifi*
+D/LowMemoryDialogActivity(  451): Intent: LowMemory
+W/LowMemoryDialogActivity(  451): FreeMem = 42487808; ThresholdMem = 40671640
