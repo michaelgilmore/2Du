@@ -5,11 +5,12 @@
 	android:layout_height="fill_parent"
     android:orientation="horizontal"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".SimpleTodoActivity"
+    tools:context=".TodoActivity"
+    android:descendantFocusability="blocksDescendants"
 >
 	<TextView 
 		android:id="@+id/tvViewRow"
-		android:layout_width="wrap_content"
+		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 	    android:background="#000"
 	    android:textSize="@dimen/list_text_size"

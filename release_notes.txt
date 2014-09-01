@@ -1,5 +1,12 @@
 TODO
 
+v1.1.1 - 20140830
+Defaulted created_date field to "DEFAULT (datetime('now','localtime'))", db version 4.
+
+v1.1 - 20140829
+Re-instated the long click listener for drag/drop reordering.
+Added position field to the database to persist reordering and updated_date to mirror the online mysql db, db version 3.
+
 v1.0 - 20140825
 Added call to PHP web service to add new todos to online MySQL database.
 

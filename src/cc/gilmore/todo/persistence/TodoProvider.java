@@ -35,17 +35,19 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
  
 import cc.gilmore.todo.Todo;
-import cc.gilmore.todo.activity.SimpleTodoActivity;
+import cc.gilmore.todo.activity.TodoActivity;
  
 public class TodoProvider {
 	private static final String DB_NAME = "tasks";
 	private static final String TABLE_NAME = "tasks";
-	private static final int DB_VERSION = 2;
+	private static final int DB_VERSION = 4;
 	private static final String DB_CREATE_QUERY = "CREATE TABLE " + TABLE_NAME
 			+ " ("
 			+ "id integer primary key autoincrement,"
 			+ "title text not null,"
-			+ "created_date date"
+			+ "created_date date not null DEFAULT (datetime('now','localtime')),"
+			+ "updated_date date,"
+			+ "position integer"
 			+ ");";
  
 	private SQLiteDatabase storage;
@@ -69,9 +71,9 @@ public class TodoProvider {
 	}
  
 	public List<Todo> findAll() {
-		Log.d(SimpleTodoActivity.APP_TAG, "findAll triggered");
+		Log.d(TodoActivity.APP_TAG, "findAll triggered");
 		List<Todo> tasks = new ArrayList<Todo>();
-		Cursor c = storage.query(TABLE_NAME, new String[] { "title", "created_date" }, null,
+		Cursor c = storage.query(TABLE_NAME, new String[] { "title", "created_date", "id" }, null,
 				null, null, null, null);
 		if (c != null) {
 			c.moveToFirst();
@@ -81,6 +83,8 @@ public class TodoProvider {
 				title = c.getString(0);
 				created_date = c.getString(1);
 				Todo todo = new Todo(title, created_date);
+				todo.setDbId(c.getLong(2));
+				
 				tasks.add(todo);
 				c.moveToNext();
 			}
@@ -93,33 +97,6 @@ public class TodoProvider {
 		ContentValues data = new ContentValues();
 		data.put("title", title);
 		storage.insert(TABLE_NAME, null, data);
-		
-		//addTaskOnline(title);
-	}
- 
-	private void addTaskOnline(String title) {
-		final HttpClient httpclient = new DefaultHttpClient();
-		final HttpPost httppost = new HttpPost("www.gilmore.cc/2Du/insertTodo.php");
-		final ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
-		nameValuePairs.add(new BasicNameValuePair("text", title));
-
-		try {
-			httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-			return;
-		}
-		
-		HttpResponse response = null;
-		try {
-			response = httpclient.execute(httppost);
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			System.out.println(httppost);
-		}
 	}
 
 	public void deleteTask(String title) {
@@ -128,5 +105,17 @@ public class TodoProvider {
  
 	public void deleteTask(long id) {
 		storage.delete(TABLE_NAME, "id=" + id, null);
+	}
+	
+	/*
+	 * This method is used to reorder tasks in the UI for order of priority.
+	 */
+	public void setTaskPosition( String title, int newPosition ) {
+		ContentValues values = new ContentValues();
+	    values.put("position", newPosition);
+	    String whereClause = "title=";
+	    String[] whereArgs = {title};
+	    
+		storage.update(TABLE_NAME, values, whereClause, whereArgs);
 	}
 }

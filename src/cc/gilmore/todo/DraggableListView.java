@@ -1,68 +1,33 @@
 package cc.gilmore.todo;
 
-/*
- * Copyright (C) 2013 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
-import android.animation.TypeEvaluator;
-import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.view.animation.TranslateAnimation;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * The dynamic listview is an extension of listview that supports cell dragging
- * and swapping.
- *
- * This layout is in charge of positioning the hover cell in the correct location
- * on the screen in response to user touch events. It uses the position of the
- * hover cell to determine when two cells should be swapped. If two cells should
- * be swapped, all the corresponding data set and layout changes are handled here.
- *
- * If no cell is selected, all the touch events are passed down to the listview
- * and behave normally. If one of the items in the listview experiences a
- * long press event, the contents of its current visible state are captured as
- * a bitmap and its visibility is set to INVISIBLE. A hover cell is then created and
- * added to this layout as an overlaying BitmapDrawable above the listview. Once the
- * hover cell is translated some distance to signify an item swap, a data set change
- * accompanied by animation takes place. When the user releases the hover cell,
- * it animates into its corresponding position in the listview.
- *
- * When the hover cell is either above or below the bounds of the listview, this
- * listview also scrolls on its own so as to reveal additional content.
- */
-@SuppressLint("NewApi")
 public class DraggableListView extends ListView {
 
     private final int SMOOTH_SCROLL_AMOUNT_AT_EDGE = 15;
@@ -96,6 +61,8 @@ public class DraggableListView extends ListView {
 
     private boolean mIsWaitingForScrollFinish = false;
     private int mScrollState = OnScrollListener.SCROLL_STATE_IDLE;
+    
+    private int uniquenessFlag = 0;
 
     public DraggableListView(Context context) {
         super(context);
@@ -129,16 +96,29 @@ public class DraggableListView extends ListView {
      */
     private AdapterView.OnItemLongClickListener mOnItemLongClickListener =
         new AdapterView.OnItemLongClickListener() {
-            public boolean onItemLongClick(AdapterView<?> arg0, View arg1, int pos, long id) {
+            public boolean onItemLongClick(AdapterView<?> arg0, View view, int pos, long id) {
                 mTotalOffset = 0;
 
                 int position = pointToPosition(mDownX, mDownY);
                 int itemNum = position - getFirstVisiblePosition();
 
-                View selectedView = getChildAt(itemNum);
+                RelativeLayout selectedListItem = (RelativeLayout)getChildAt(itemNum);
+//                setViewTextForDebugging(selectedListItem);
+//                RelativeLayout relLayout = (RelativeLayout)getChildAt(5);
+//                setViewTextForDebugging(relLayout);
+//                relLayout = (RelativeLayout)getChildAt(1);
+//                setViewTextForDebugging(relLayout);
+//                relLayout = (RelativeLayout)getChildAt(2);
+//                setViewTextForDebugging(relLayout);
+//                relLayout = (RelativeLayout)getChildAt(3);
+//                setViewTextForDebugging(relLayout);
+//                relLayout = (RelativeLayout)getChildAt(4);
+//                setViewTextForDebugging(relLayout);
+
                 mMobileItemId = getAdapter().getItemId(position);
-                mHoverCell = getAndAddHoverView(selectedView);
-                selectedView.setVisibility(INVISIBLE);
+                mHoverCell = getAndAddHoverView(selectedListItem);
+//                selectedListItem.setVisibility(INVISIBLE);
+                makeViewInvisible(selectedListItem);
 
                 mCellIsMobile = true;
 
@@ -290,6 +270,14 @@ public class DraggableListView extends ListView {
             });
             hoverViewAnimator.start();
             */
+            mAboveItemId = INVALID_ID;
+            mMobileItemId = INVALID_ID;
+            mBelowItemId = INVALID_ID;
+            //mobileView.setVisibility(VISIBLE);
+            makeViewVisible(mobileView);
+            mHoverCell = null;
+            setEnabled(true);
+            invalidate();
         } else {
             touchEventsCancelled();
         }
@@ -304,7 +292,8 @@ public class DraggableListView extends ListView {
             mAboveItemId = INVALID_ID;
             mMobileItemId = INVALID_ID;
             mBelowItemId = INVALID_ID;
-            mobileView.setVisibility(VISIBLE);
+//            mobileView.setVisibility(VISIBLE);
+            makeViewVisible(mobileView);
             mHoverCell = null;
             invalidate();
         }
@@ -361,8 +350,11 @@ public class DraggableListView extends ListView {
         int deltaYTotal = mHoverCellOriginalBounds.top + mTotalOffset + deltaY;
 
         View belowView = getViewForID(mBelowItemId);
+//        String belowViewText = getTextFromView(belowView);
         View mobileView = getViewForID(mMobileItemId);
+//        String mobileViewText = getTextFromView(mobileView);
         View aboveView = getViewForID(mAboveItemId);
+//        String aboveViewText = getTextFromView(aboveView);
 
         boolean isBelow = (belowView != null) && (deltaYTotal > belowView.getTop());
         boolean isAbove = (aboveView != null) && (deltaYTotal < aboveView.getTop());
@@ -378,6 +370,20 @@ public class DraggableListView extends ListView {
                 return;
             }
 
+//            if(isDebug()){
+//                String before1 = getTextFromView(mobileView);
+//                String before2 = getTextFromView(switchView);
+//
+//                Todo mobileTodo = (Todo)getAdapter().getItem(originalItem);
+//                mobileTodo.setTitleForDebugging("getAdapter()");
+//                
+//                setViewTextForDebugging(mobileView);
+//                setViewTextForDebugging(switchView);
+//
+//                before1 = getTextFromView(mobileView);
+//                before2 = getTextFromView(switchView);
+//            }
+
             swapElements(mTodoList, originalItem, getPositionForView(switchView));
 
             ((BaseAdapter) getAdapter()).notifyDataSetChanged();
@@ -386,8 +392,10 @@ public class DraggableListView extends ListView {
 
             final int switchViewStartTop = switchView.getTop();
 
-            mobileView.setVisibility(View.VISIBLE);
-            switchView.setVisibility(View.INVISIBLE);
+//            mobileView.setVisibility(View.VISIBLE);
+            makeViewVisible(mobileView);
+//            switchView.setVisibility(View.INVISIBLE);
+            makeViewInvisible(switchView);
 
             updateNeighborViewsForID(mMobileItemId);
 
@@ -398,19 +406,24 @@ public class DraggableListView extends ListView {
                     observer.removeOnPreDrawListener(this);
 
                     View switchView = getViewForID(switchItemID);
-
+                    
                     mTotalOffset += deltaY;
 
                     int switchViewNewTop = switchView.getTop();
                     int delta = switchViewStartTop - switchViewNewTop;
 
-//MG
-//                    switchView.setTranslationY(delta);
-
-//                    ObjectAnimator animator = ObjectAnimator.ofFloat(switchView,
-//                            View.TRANSLATION_Y, 0);
-//                    animator.setDuration(MOVE_DURATION);
-//                    animator.start();
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+                    	switchView.setTranslationY(delta);
+                    	ObjectAnimator animator = ObjectAnimator.ofFloat(switchView,
+                    			View.TRANSLATION_Y, 0);
+		              	animator.setDuration(MOVE_DURATION);
+		              	animator.start();
+                    } else {
+                        TranslateAnimation anim = new TranslateAnimation(0, 0, -delta, -delta);
+                        anim.setFillAfter(true);
+                        anim.setDuration(0);
+                        switchView.startAnimation(anim);
+                    }
 
                     return true;
                 }
@@ -418,7 +431,36 @@ public class DraggableListView extends ListView {
         }
     }
 
-    private void swapElements(List<Todo> arrayList, int indexOne, int indexTwo) {
+    private void setViewTextForDebugging(View view) {
+		RelativeLayout layout = (RelativeLayout)view;
+		if(layout != null){
+			TextView textView = (TextView)layout.getChildAt(0);
+			if(textView != null){
+		        //int w = view.getWidth();
+		        //int h = view.getHeight();
+		        int top = view.getTop();
+		        //int left = view.getLeft();
+	            int position = getPositionForView(view);
+                //int itemNum = position - getFirstVisiblePosition();
+		        //textView.setText(uniquenessFlag+++"p:"+position+",n:"+itemNum+",w:"+w+",h:"+h+",t:"+top+",l:"+left);
+		        //n=p, w=480, h=72, l=0
+		        textView.setText(uniquenessFlag+++"pos:"+position+",top:"+top);
+			}
+		}
+	}
+
+	private String getTextFromView(View view) {
+		RelativeLayout layout = (RelativeLayout)view;
+		if(layout != null){
+			TextView textView = (TextView)layout.getChildAt(0);
+			if(textView != null){
+				return textView.getText().toString();
+			}
+		}
+		return null;
+	}
+
+	private void swapElements(List<Todo> arrayList, int indexOne, int indexTwo) {
         Todo temp = arrayList.get(indexOne);
         arrayList.set(indexOne, arrayList.get(indexTwo));
         arrayList.set(indexTwo, temp);
@@ -439,6 +481,11 @@ public class DraggableListView extends ListView {
         int top = v.getTop();
         int left = v.getLeft();
 
+//        Doesn't work
+//        View viewT = ((RelativeLayout)v).getChildAt(0);
+//        String viewTClass = viewT.getClass().toString();
+//        ((TextView)viewT).setText("w:"+w+",h:"+h+",t:"+top+",l:"+left);
+
         mHoverCellOriginalBounds = new Rect(left, top, left + w, top + h);
         mHoverCellCurrentBounds = new Rect(mHoverCellOriginalBounds);
 
@@ -449,7 +496,9 @@ public class DraggableListView extends ListView {
 
     /** Draws a black border over the screenshot of the view passed in. */
     private Bitmap getBitmapWithBorder(View v) {
-        Bitmap bitmap = getBitmapFromView(v);
+        Bitmap bitmap = Bitmap.createBitmap(v.getWidth(), v.getHeight(), Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas (bitmap);
+        v.draw(canvas);
         Canvas can = new Canvas(bitmap);
 
         Rect rect = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());
@@ -462,16 +511,6 @@ public class DraggableListView extends ListView {
         can.drawBitmap(bitmap, 0, 0, null);
         can.drawRect(rect, paint);
 
-        return bitmap;
-    }
-
-    /** Returns a bitmap showing a screenshot of the view passed in. */
-    private Bitmap getBitmapFromView(View v) {
-    	int w = v.getWidth();
-    	int h = v.getHeight();
-        Bitmap bitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas (bitmap);
-        v.draw(canvas);
         return bitmap;
     }
 
@@ -492,10 +531,12 @@ public class DraggableListView extends ListView {
     public View getViewForID (long itemID) {
         int firstVisiblePosition = getFirstVisiblePosition();
         TodoArrayAdapter adapter = ((TodoArrayAdapter)getAdapter());
+        int position = 0;
+        long id = 0;
         for(int i = 0; i < getChildCount(); i++) {
             View v = getChildAt(i);
-            int position = firstVisiblePosition + i;
-            long id = adapter.getItemId(position);
+            position = firstVisiblePosition + i;
+            id = adapter.getItemId(position);
             if (id == itemID) {
                 return v;
             }
@@ -570,16 +611,6 @@ public class DraggableListView extends ListView {
             }
         }
 
-        private void touchEventsEnded() {
-			// TODO Auto-generated method stub
-			
-		}
-
-		private void handleMobileCellScroll() {
-			// TODO Auto-generated method stub
-			
-		}
-
 		/**
          * Determines if the listview scrolled up enough to reveal a new cell at the
          * top of the list. If so, then the appropriate parameters are updated.
@@ -592,16 +623,6 @@ public class DraggableListView extends ListView {
                 }
             }
         }
-
-        private void handleCellSwitch() {
-			// TODO Auto-generated method stub
-			
-		}
-
-		private void updateNeighborViewsForID(long mMobileItemId) {
-			// TODO Auto-generated method stub
-			
-		}
 
 		/**
          * Determines if the listview scrolled down enough to reveal a new cell at the
@@ -618,4 +639,32 @@ public class DraggableListView extends ListView {
             }
         }
     };
+    
+	
+	public boolean isDebug()
+	{
+	    boolean debuggable = false;
+	 
+	    Context ctx = getContext();
+	    PackageManager pm = ctx.getPackageManager();
+	    try
+	    {
+	        ApplicationInfo appinfo = pm.getApplicationInfo(ctx.getPackageName(), 0);
+	        debuggable = (0 != (appinfo.flags & ApplicationInfo.FLAG_DEBUGGABLE));
+	    }
+	    catch(NameNotFoundException e)
+	    {
+	        /*debuggable variable will remain false*/
+	    }
+	     
+	    return debuggable;
+	}
+
+	private void makeViewVisible(View v) {
+		v.setVisibility(VISIBLE);
+	}
+
+	private void makeViewInvisible(View v) {
+		//v.setVisibility(INVISIBLE);
+	}
 }
